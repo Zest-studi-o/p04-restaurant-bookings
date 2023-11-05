@@ -4,7 +4,7 @@
 
 A web application that enables users to know more about the restaurant, manage bookings and view the menu, as well as a tool for restaurant owners and staff to organise their bookings.
 
-Visit the live site: [My restaurant booking system](link)
+Visit the live site: [My restaurant booking system](https://megarestaurant-20c7141b277b.herokuapp.com/)
 
 # Table of contents
 
@@ -126,14 +126,36 @@ The language used is Python
 
 - This site was deployed by completing the following steps:
 
+####  Django
+In order to protect the django app secret key it was set as environment variable and stored in env.py file
+
 ####  Heroku
 1. Log in to [Heroku](https://id.heroku.com) or create an account
+2. Click “New”
+3. Click “Create new app”
+4. Give your app a name and select the region closest to you. When you’re done, click “Create app” to confirm
+5. Open the Settings tab and add the config vars
 
 ####  ElephantSQL
 1. Log in to [ElephantSQL](https://www.elephantsql.com/) or create an account
+2. Click “Create New Instance”
+3. Set up your plan
+ - Give your plan a Name (this is commonly the name of the project)
+ - Select the Tiny Turtle (Free) plan
+ - You can leave the Tags field blank
+4. Select “Select Region”
+5. Select a data center near you
+6. Then click “Review”
+7. Check your details are correct and then click “Create instance”
+8. Return to the ElephantSQL dashboard and click on the database instance name for this project
+9. In the URL section, click the copy icon to copy the database URL
+10. Paste this URL into env.py file as DATABASE_URL value and save the file.
+
 
 ####  Cloudinary
 1. Log in to [Cloudinary](https://cloudinary.com/) or create an account
+2. Navigate to dashboard/console https://console.cloudinary.com/console/ and copy API Enviroment variable starting with "cloudinary://".
+3. Paste copied url into env.py file as CLOUDINARY_URL value and save the file.
 
 
 ### Local Development
