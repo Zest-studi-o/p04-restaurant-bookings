@@ -55,7 +55,32 @@ Project goals:
 
 ### User Stories
 
-Done using kanban board (add link here)
+|   EPIC                                |ID|                                User Story                                                   |
+| :-------------------------------------|--|:------------------------------------------------------------------------------------------- |
+|**CONTENT AND NAVIGATION**             |  ||
+|                                       |1A| As a user, I want to see a menu so I can easily access all the content |             
+|                                       |1B| As a user, I want to see relevant information about the restaurant|
+|                                       |1C| As a user, I want the website to have a nice and intuitive design that will match the restaurant's theme|
+|**USER REGISTRATION/AUTENTHICATION**   |  || 
+|                                       |2A| As a user, I want to be able to register on the website|
+|                                       |2B| As a user, I want to be able to authenticate using only email and password|
+|                                       |2C| As a user, I want to be able to log out at any time|
+|**BOOKING**                            |  ||
+|                                       |3A| As a logged-in user, I want to be able to find the available tables for a specific date and time|
+|                                       |3B| As a logged-in user, I want to be able to select the table that I want to reserve|
+|**MENU**                               |  ||
+|                                       |4A| As a user, I want to see the restaurant's menu with details about description, category and price, so that I can make an informed decision|                                  
+|**USER PROFILE**                       |  ||
+|                                       |5A| As a logged-in user, I want to view a list of my upcoming bookings|
+|                                       |5B| As a logged-in user, I want to be able to edit my bookings|
+|                                       |5C| As a logged-in user, I want to be able to delete my bookings|
+|**ADMIN MANAGE BOOKINGS**              |  ||
+|                                       |6A| As a logged-in admin member, I want to see the restaurant's upcoming bookings for the current day sorted by time|
+|                                       |6B| As a logged-in admin member, I want to be able to filter bookings by date|
+|**CONTACT**                            |  ||
+|                                       |7A| As a user, I want to see the restaurant's opening and closing hours|
+|                                       |7B| As a user, I want to see location information on the website|
+|                                       |7C| As a user, I want to see contact information on the website|
 
 ---
 
