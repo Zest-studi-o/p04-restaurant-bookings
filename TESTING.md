@@ -64,18 +64,18 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
     -For the *Home* page, a *Back to top* button is present at the end of the content,(considering screen sizes can vary depending on device used,) and redirects the user to the top of the page where he can access the navigation links;<br>
     -For logged-in clients, the menu contains an additional page, *Booking*, and *Logout* link replaces *Register* and *Login* pages;<br>
        *By testing all these features, it can be affirmed that the user story is accomplished.*<br>
-* **Outcome:** Pass
+* **Outcome:** Pass or Fail
 
 #### 1B: As a user, I want to see relevant information about the restaurant
 * **Acceptance Criteria:** A site user should be able to see relevant information about the restaurant.
 * **Summary:**   
--When a user first visits the website, he is redirected to the *Home* page and a big cover with a noodle with egg dish background is displayed;
+-When a user first visits the website, they are redirected to the *Home* page and an appealing cover is displayed, that ensures the user knows what the page at first sight;
 -The cover also displays information about the welcome with name and slogan of the restaurant;
 -"About us" is a section on the *Home* page that describes the restaurant and another image of the restaurant interior;
 -More information about the restaurant specialities and contact details can be found on the *Menu* and *contact us* pages.
 
 By testing all these features, it can be affirmed that the user story is accomplished.
-•	Outcome: Pass
+* **Outcome:** Pass or Fail
 
 
 #### 1C: As a user, I want the website to have a nice and intuitive design that will match the restaurant's theme
@@ -89,7 +89,7 @@ By testing all these features, it can be affirmed that the user story is accompl
 
     
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br>
-* **Outcome:** Pass 
+* **Outcome:** Pass or Fail 
 
 ### USER REGISTRATION/AUTENTHICATION
 #### 2A: As a user, I want to be able to register on the website
@@ -100,7 +100,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     -A success message is displayed with the message "Logged in as..." that confirms to the user that he has been registered successfully.<br><br>
 
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** Pass 
+* **Outcome:** Pass or Fail
 
 #### 2B: As a user, I want to be able to authenticate using only email and password
 * **Acceptance Criteria:** A site user should be able to authenticate at any time with email and password.
@@ -110,7 +110,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     -A success alert is displayed with the message "Logged in as..." that confirms to the user that he has been logged in successfully.<br><br>
 
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** Pass
+* **Outcome:** Pass or Fail
 
 #### 2C: As a user, I want to be able to logout at any time
 * **Acceptance Criteria:** A site user should be able to exit current account at any time.
@@ -120,7 +120,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     -A success button message is displayed with the message "You have signed out" that confirms to the user that he has been successfully logged out.<br><br>
     
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** pass
+* **Outcome:** Pass or Fail
 
 ### BOOKING
 #### 3A: As a logged in user, I want to be able to book a reservation for a specific date, time and number of table
@@ -137,7 +137,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     - If the validation is complete, and the user submits the form, a successful feedback in a form of a button message is provided; But if there's no available table for the capacity required a message feedback is also given and the guest cannot proceed with the booking.<br>
 
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** 
+* **Outcome:** Pass or Fail
 
 
 ### MENU
@@ -150,7 +150,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     -All images have the same dimensions, with transparent backgrounds, and prices are in bold, for better visual impact.<br><br>
     
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** 
+* **Outcome:** Pass or Fail
 
 #### 5B: As a logged in user, I want to be able to edit or delete my bookings
 * **Acceptance Criteria:** A logged in user should be provided a way to edit or delete a booking if he no longer wishes to keep it. 
@@ -160,7 +160,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     -Bookings can also be deleted via a 'delete' button. 
 
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** 
+* **Outcome:** Pass or Fail
 
 ### ADMIN MANAGE BOOKINGS
 #### 6A: As a logged in admin member, I want to see the restaurant's upcoming bookings sorted by booking date and time
@@ -171,7 +171,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     -The bookings are listed in a table and every column represents an important detail such as Date, Time, Number of table, and Customer name;<br>
 
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** 
+* **Outcome:** Pass or Fail
 
 ### CONTACT US
 #### 7A: As a user, I want to see the restaurant's opening and closing hours
@@ -182,7 +182,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     -The timetable has a simple and attractive design and the information is clear.<br><br>
 
      *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** 
+* **Outcome:** Pass or Fail
 
 #### 7B: As a user, I want to see location information on the website
 * **Acceptance Criteria:** A site user should be provided information about restaurant's location.
@@ -191,7 +191,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     -Also there is an informative text with the address of the restaurant;<br><br>
 
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** 
+* **Outcome:** Pass or Fail
 
 #### 7C: As a user, I want to see contact information on the website
 * **Acceptance Criteria:** A site user should be provided the restaurant's contact information.
@@ -200,7 +200,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     -The section displays the phone number and contact email for the restaurant.<br><br>
 
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** 
+* **Outcome:** Pass or Fail
 
 ### Full Testing
 
@@ -257,9 +257,10 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 ### Solved Bugs
 
-| ID  | CLASS | FEATURE                 | DESCRIPTION                                                                                                                                                                                                                            | STEPS TO REPRODUCE                                                                                                                                                                           | ACTUAL RESULT                                                               | EXPECTED RESULT                                 | ACTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | STATUS                          |
+| ID  | CLASS | FEATURE/SECTION                 | DESCRIPTION                                                                                                                                                                                                                            | STEPS TO REPRODUCE                                                                                                                                                                           | ACTUAL RESULT                                                               | EXPECTED RESULT                                 | ACTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | STATUS                          |
 | --- | ----- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| 1   | A     | abc | abc | abc                                                   | abc                                               | FIXED                           |
+| 1   | A     | Django models |The models do not work correctly   | Create models>Run the server> Go to the website & log in in the admin panel> click on Bookatable > Observe the issue with the page not loading        | Error message when clicking on bookatable                ![Models Error](docs/testing/1/models_error.jpg)                          |Please ensure that bookings are loading correctly| There was a message informing that the models have migrated correctly but when accessing the site this was not working   ![No changes](docs/testing/1/no_changes.jpg)  Tried to migrate again but when doing this the terminal informed that the migrations where up to date, as the message was saying that booking_id was not existing but it did, and considering another model was tried before, the server was set to run local, ![No changes](docs/testing/1/local.jpg) and the error was logged to the console,  ![Error log](docs/testing/1/error_log.jpg)  , Django migrations were removed and the database was reset. After this the migrations were run again successfully and this solved the issue.
+         | FIXED|
 
 
 ### Known Bugs
