@@ -100,7 +100,8 @@ Project goals:
 
 ![Logo](image)
 
-
+**Colour Palette**
+![Colour palette](docs/readme/colour-palette.png)
 ---
 
 ### Features Left to Implement
