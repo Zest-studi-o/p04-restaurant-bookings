@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Header content -->
+<div class="header-content">
+    <div class="container">
+        <h1>Welcome to MegaRestaurant</h1>
+        <p>A Mega Restaurant you will never forget</p>
+    </div>
+</div>
+<!-- Main content -->
+<div class="main-content">
+    <div class="container">
+        <!-- About us section -->
+        <section id="about-us" class="text-center">
+            <h2 class="welcome"><span>About Us<i class="fa-solid fa-utensils" aria-hidden="true"></i></span>
+            </h2>
+            <div id="about-text">
+                <p>A Mega Restaurant you will never forget.
+                    Restaurant intro</p>
+            </div>
+            <div class="text-center">
+                <img src="{% static 'images/people_restaurant.jpg' %}" alt="People at MegaRestaurant having fun"
+                    class="img-fluid">
+
+            </div>
+        </section>
+    </div>
+</div>
+
+{% endblock %}
