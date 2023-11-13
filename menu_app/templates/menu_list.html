@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="background-container review-page">
+        <div class="center-container">
+            <div class="flex f-column a-center">
+                <!-- Link to Login/Register page -->
+                <h2 class="a-center"><strong>****** Menu *******</strong></h2>
+                {% if not user.is_authenticated %}
+                <div class="menu-page">
+                    <p class="menu-p">If you would like to book a table,
+                        please <span><a class="authenticate-link" href="{% url 'account_login' %}"><b>LOGIN</b></a> / <a
+                                class="authenticate-link" href="{% url 'account_signup' %}"><b>REGISTER</b></a></span>
+                    </p>
+                </div>
+                {% endif %}
+                <br>
+                <div class="menu-list"
+                    style="overflow-x: scroll; overflow-y: scroll; max-height: 400px; max-width: 800px;">
+                    {% for meal in object_list %}
+                    <!-- Menu item container -->
+                    <div class="meal">
+                        <div class="dish">
+                            <img src="{{ meal.image_url.url }}" alt="menu element">
+                        </div>
+                        <div class="menu-container">
+                            <div class="flex sp-between ">
+                                <div class="flex meal-header">
+                                    <h5 class="meal-name">{{ meal.menu_name }}</h5>
+                                    <p class="price green larger"><b>€{{ meal.price }}</b></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="description small d-none d-sm-block">{{ meal.description }}</p>
+                            </div>
+                            <div class="row">
+                                <p class="description"><b>Category:</b> {{ meal.category }}</p>
+                            </div>
+                            <div class="row">
+                                <p class="hr">
+                                    .....................................................................................................................................................................................................................
+                                </p>
+                            </div>
+                        </div>
+                    </div><br>
+                    {% endfor %}
+                </div>
+            </div><br>
+        </div>
+    </div>
+</div>
+{% endblock %}
