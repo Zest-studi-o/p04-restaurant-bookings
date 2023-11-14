@@ -3,38 +3,41 @@ from django.contrib.auth.models import User
 from django.db.models import Sum
 
 
+PEOPLE = ((1, "1"), (2, "2"), (3, "3"), (5, "4"), (4, "4"), (6, "6"), (7, "7"), (8, "8"), (9, "9"), (10, "10"), (11, "11"), (12, "12"))
+
 class Booking(models.Model):
-    booking_id = models.AutoField(primary_key=True)
+    booking_id = models.AutoField(primary_key=True) # Set this to primary key
     date = models.DateField()
     booking_time = models.CharField(
         max_length=5,
-        choices=[
-            ("10:00", "10:00 AM"),
-            ("11:00", "11:00 AM"),
-            ("12:00", "12:00 PM"),
-            ("13:00", "01:00 PM"),
-            ("14:00", "02:00 PM"),
-            ("15:00", "03:00 PM"),
-            ("16:00", "04:00 PM"),
-            ("17:00", "05:00 PM"),
-            ("18:00", "06:00 PM"),
-            ("19:00", "07:00 PM"),
-            ("20:00", "08:00 PM"),
-            ("21:00", "09:00 PM"),
-            ("22:00", "10:00 PM"),
+        choices=[ 
+            (1, "10:00 - 10:45"),
+            (2, "11:00 - 11:45"),
+            (3, "12:00 - 12:45"),
+            (4, "13:00 - 13:45"),
+            (5, "14:00 - 14:45"),
+            (6, "15:00 - 15:45"),
+            (7, "16:00 - 16:45"),
+            (8, "17:00 - 17:45"),
+            (8, "18:00 - 18:45"),
+            (8, "19:00 - 19:45"),
+            (8, "20:00 - 20:45"),
+            (8, "21:00 - 21:45"),
+            (8, "22:00 - 22:45"),
         ],
-        default="10:00"  # Set the default value to "10:00"
+         default="10:00 - 10:45"  #Set the default value to "10:00- 10:45"
     )
-    customer_name = models.CharField(max_length=255)
-    customer_email = models.EmailField()
-    total_tables = models.PositiveIntegerField()
+    customer_name = models.CharField(max_length=255) # Name 
+    customer_email = models.EmailField() # Email
+    people = models.IntegerField(choices=PEOPLE, default=2) # To select how many people 
+    total_tables = models.PositiveIntegerField() # Tables booked
     created_on = models.DateTimeField(auto_now_add=True)
-    created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE) # Set this to foreign key
 
     def is_table_available(self):
         """ 
         Calculate the total tables booked 
-        for the selected date and time 
+        for the selected date and time slot
         """
     
         booked_tables = Booking.objects.filter(date=self.date, booking_time=self.booking_time).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
