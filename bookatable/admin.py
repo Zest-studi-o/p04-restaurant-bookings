@@ -10,4 +10,5 @@ class BookingAdmin(admin.ModelAdmin):
         "date",
         "booking_time",
         "total_tables",
+        "people",
         )
