@@ -69,6 +69,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-zeststudio-p04restauran-lrz9o8qq380.ws-eu106.gitpod.io']
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

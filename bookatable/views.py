@@ -11,7 +11,7 @@ from django.core.exceptions import ValidationError
 class BookingListView(LoginRequiredMixin, ListView):
     model = Booking
     template_name = 'booking_list.html'
-    context_object_name = 'bookings'
+    context_object_name = 'bookatable'
     ordering = ['-created_on']
 
     def get_queryset(self):

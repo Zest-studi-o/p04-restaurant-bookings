@@ -23,10 +23,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {% for booking in bookings %}
+                        {% for booking in bookatable %}
                         <tr>
 
-                            <!--
                             <td>{{ booking.booking_id }}</td>
                             <td>{{ booking.date }}</td>
                             <td>{{ booking.booking_time }}</td>
@@ -34,14 +33,6 @@
                             <td>{{ booking.customer_email }}</td>
                             <td>{{ booking.total_tables }}</td>
                             <td>{{ booking.created_on }}</td>
-                            -->
-                            <td>{{ bookatable.booking_id }}</td>
-                            <td>{{ bookatable.date }}</td>
-                            <td>{{ bookatable.booking_time }}</td>
-                            <td>{{ bookatable.customer_name }}</td>
-                            <td>{{ bookatable.customer_email }}</td>
-                            <td>{{ bookatable.total_tables }}</td>
-                            <td>{{ bookatable.created_on }}</td>
                             <td>
                                 <a href="{% url 'booking-update' booking.pk %}" class="btn btn-sm btn-primary">Edit</a>
                                 <a href="{% url 'booking-delete' booking.pk %}" class="btn btn-sm btn-danger">Delete</a>
