@@ -222,7 +222,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Media
 
-- [Title](link)
+- [Ramen bowl](lhttps://www.pexels.com/photo/a-bowl-of-ramen-17952227/)
 
 ### Acknowledgments
 
