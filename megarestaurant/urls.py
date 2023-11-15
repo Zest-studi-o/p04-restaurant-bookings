@@ -15,7 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
+from allauth.account.views import login, signup, logout
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('home_page.urls')),
+    path('contact/', include('contact_us.urls'), name='contact'),
+    path('booking/', include('bookatable.urls'), name='booking-list'),
+    path('account/signup/', signup, name='account_signup'),
+    path('account/login/', login, name='account_login'),
+    path('account/logout/', logout, name='account_logout'),
+    path('', include('menu_app.urls')),
+    path("accounts/", include("allauth.urls")),
 ]

@@ -46,11 +46,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary',
+    'django.contrib.staticfiles',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'cloudinary',
-    'django.contrib.staticfiles',
     'cloudinary_storage',
     'bookatable',
     'home_page',
@@ -59,8 +59,12 @@ INSTALLED_APPS = [
 ]
 
 SITE_ID = 1
+
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URl = '/'
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
