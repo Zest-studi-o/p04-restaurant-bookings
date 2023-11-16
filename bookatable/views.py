@@ -9,6 +9,9 @@ from django.core.exceptions import ValidationError
 
 
 class BookingListView(LoginRequiredMixin, ListView):
+    """
+    Creates views for the list of bookings
+    """
     model = Booking
     template_name = 'booking_list.html'
     context_object_name = 'bookatable'
@@ -22,6 +25,9 @@ class BookingListView(LoginRequiredMixin, ListView):
 
 
 class BookingCreateView(LoginRequiredMixin, CreateView):
+    """
+    Creates views for a bookings
+    """
     model = Booking
     template_name = 'booking_form.html'
     form_class = BookingForm
@@ -48,6 +54,9 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
 
 
 class BookingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """
+    Enables to update the booking
+    """
     model = Booking
     template_name = 'booking_form.html'
     form_class = BookingForm
@@ -62,6 +71,9 @@ class BookingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
 
 class BookingDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """
+    Enables to delete the booking
+    """
     model = Booking
     template_name = 'booking_confirm_delete.html'
 

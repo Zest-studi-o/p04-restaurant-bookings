@@ -11,26 +11,25 @@ class Booking(models.Model):
     booking_time = models.CharField(
         max_length=20,
         choices=[ 
-            ("1", "10:00 - 10:45"),
-            ("2", "11:00 - 11:45"),
-            ("3", "12:00 - 12:45"),
-            ("4", "13:00 - 13:45"),
-            ("5", "14:00 - 14:45"),
-            ("6", "15:00 - 15:45"),
-            ("7", "16:00 - 16:45"),
-            ("8", "17:00 - 17:45"),
-            ("9", "18:00 - 18:45"),
-            ("10", "19:00 - 19:45"),
-            ("11", "20:00 - 20:45"),
-            ("12", "21:00 - 21:45"),
-            ("13", "22:00 - 22:45"),
+            ("10:00", "10:00 - 10:45"),
+            ("11:00", "11:00 - 11:45"),
+            ("12:00", "12:00 - 12:45"),
+            ("13:00", "13:00 - 13:45"),
+            ("14:00", "14:00 - 14:45"),
+            ("15:00", "15:00 - 15:45"),
+            ("16:00", "16:00 - 16:45"),
+            ("17:00", "17:00 - 17:45"),
+            ("18:00", "18:00 - 18:45"),
+            ("19:00", "19:00 - 19:45"),
+            ("20:00", "20:00 - 20:45"),
+            ("21:00", "21:00 - 21:45"),
+            ("22:00", "22:00 - 22:45"),
         ],
          default="10:00 - 10:45"  #Set the default value to "10:00- 10:45"
     )
     customer_name = models.CharField(max_length=255) # Name 
     customer_email = models.EmailField() # Email
     people = models.IntegerField(choices=PEOPLE, default=2) # To select how many people 
-   # total_tables = models.PositiveIntegerField() # Tables booked
     created_on = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE) # Set this to foreign key
 
