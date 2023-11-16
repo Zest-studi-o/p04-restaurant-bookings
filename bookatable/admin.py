@@ -9,6 +9,5 @@ class BookingAdmin(admin.ModelAdmin):
         "customer_email",
         "date",
         "booking_time",
-        "total_tables",
         "people",
         )

@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.db.models import Sum
 
 
-PEOPLE = ((1, "1"), (2, "2"), (3, "3"), (5, "4"), (4, "4"), (6, "6"), (7, "7"), (8, "8"), (9, "9"), (10, "10"), (11, "11"), (12, "12"))
+PEOPLE = ((1, "1"), (2, "2"), (3, "3"), (4, "4"), (5, "4"), (6, "6"), (7, "7"), (8, "8"), (9, "9"), (10, "10"), (11, "11"), (12, "12"))
 
 class Booking(models.Model):
     booking_id = models.AutoField(primary_key=True) # Set this to primary key
@@ -30,7 +30,7 @@ class Booking(models.Model):
     customer_name = models.CharField(max_length=255) # Name 
     customer_email = models.EmailField() # Email
     people = models.IntegerField(choices=PEOPLE, default=2) # To select how many people 
-    total_tables = models.PositiveIntegerField() # Tables booked
+   # total_tables = models.PositiveIntegerField() # Tables booked
     created_on = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE) # Set this to foreign key
 
@@ -40,11 +40,11 @@ class Booking(models.Model):
         for the selected date and time slot
         """
     
-        booked_tables = Booking.objects.filter(date=self.date, booking_time=self.booking_time).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
+        booked_tables = Booking.objects.filter(date=self.date, booking_time=self.booking_time).aggregate(Sum('people'))['people__sum'] or 0
 
-        # If the current booking is being updated, subtract its total_tables
+        # If the current booking is being updated, subtract its people
         if self.booking_id:
-            booked_tables -= self.total_tables
+            booked_tables -= self.people
         return booked_tables < 25
 
     def save(self, *args, **kwargs):

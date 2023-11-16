@@ -34,9 +34,9 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
         selected_date = form.cleaned_data['date']
         selected_time = form.cleaned_data['booking_time']
 
-        total_tables_on_datetime = Booking.objects.filter(date=selected_date, booking_time=selected_time).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
+        people_on_datetime = Booking.objects.filter(date=selected_date, booking_time=selected_time).aggregate(Sum('people'))['people__sum'] or 0
 
-        if total_tables_on_datetime + form.instance.total_tables <= 25:
+        if people_on_datetime + form.instance.people <= 25:
             form.save()
             messages.success(self.request, 'Booking successful!')
         else:
