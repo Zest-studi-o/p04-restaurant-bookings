@@ -3,6 +3,7 @@
 :root {
     --white: #fff;
     --green: #9EB25D;
+    --orange: #d7a51e;
     --red: #BC4B51;
     --cafe: #302201;
     --black: #2F2F2F;
@@ -284,7 +285,7 @@ p {
 
 /* Style the Delete button */
 .btn-danger {
-    background-color: #ff3333;
+    background-color: var(--red);
     color: var(--white);
     padding: 10px 20px;
     border: none;
@@ -293,7 +294,7 @@ p {
 }
 
 .btn-danger:hover {
-    background-color: #ff0000;
+    background-color: var(--orange);
 }
 
 /* Style the Cancel button */
@@ -407,3 +408,52 @@ h2 {
 
 
 /* MEDIA QUERIES */
+@media (max-width: 768px) {
+
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .menu-list {
+        max-height: none;
+        overflow-y: visible;
+        max-width: 100%;
+    }
+
+
+    .meal {
+        margin: 10px 0;
+    }
+
+
+    .dish img {
+        max-width: 80%;
+        height: auto;
+    }
+
+
+    .meal-name {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .meal-container {
+        padding: 10px;
+    }
+
+    .description {
+        font-size: 14px;
+        padding: 10px;
+        white-space: normal;
+    }
+
+    .row p.hr {
+        margin: 10px 0;
+    }
+}
