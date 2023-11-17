@@ -38,9 +38,9 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
 
         # Check availability for the selected date and time
         selected_date = form.cleaned_data['date']
-        selected_time = form.cleaned_data['booking_time']
+        selected_time = form.cleaned_data['time']
 
-        people_on_datetime = Booking.objects.filter(date=selected_date, booking_time=selected_time).aggregate(Sum('people'))['people__sum'] or 0
+        people_on_datetime = Booking.objects.filter(date=selected_date, time=selected_time).aggregate(Sum('people'))['people__sum'] or 0
 
         if people_on_datetime + form.instance.people <= 25:
             form.save()

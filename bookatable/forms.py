@@ -8,12 +8,12 @@ from django.db.models import Sum
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = ['customer_name', 'customer_email', 'date', 'booking_time', "people"]
+        fields = ['name', 'email', 'date', 'time', "people"]
         labels = {
-            "customer_name": "Customer Name",
-            "customer_email": "Customer Email",
+            "name": "Name",
+            "email": "Email",
             "date": "Date",
-            "booking_time": "Booking Time",
+            "time": "Time",
             "people": "Guests",
     }
 
@@ -21,19 +21,19 @@ class BookingForm(forms.ModelForm):
         cleaned_data = super().clean()
         date = cleaned_data.get("date")
         if date and date < timezone.now().date():
-            raise forms.ValidationError("Date must be a future date")
+            raise forms.ValidationError("Please select a future date")
 
-        booking_time = cleaned_data.get("booking_time")
-        if date == timezone.now().date() and booking_time:
+        time = cleaned_data.get("time")
+        if date == timezone.now().date() and time:
             current_time = datetime.now().time().strftime("%H:%M")
-            if booking_time < current_time:
-                raise forms.ValidationError("Booking time can not be in the past")
+            if time < current_time:
+                raise forms.ValidationError("Please select a future time")
 
     date = forms.DateField(
-        help_text="Date must be a future date",
+        help_text="Please enter a future date",
         widget=forms.widgets.DateInput(attrs={"type": "date"}),
     )
-    booking_time = forms.ChoiceField(
+    time = forms.ChoiceField(
         choices=[
             ("10:00", "10:00 - 10:45"),
             ("11:00", "11:00 - 11:45"),

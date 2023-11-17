@@ -6,9 +6,9 @@ from django.db.models import Sum
 PEOPLE = ((1, "1"), (2, "2"), (3, "3"), (4, "4"), (5, "4"), (6, "6"), (7, "7"), (8, "8"), (9, "9"), (10, "10"), (11, "11"), (12, "12"))
 
 class Booking(models.Model):
-    booking_id = models.AutoField(primary_key=True) # Set this to primary key
+    id = models.AutoField(primary_key=True) # Set this to primary key
     date = models.DateField()
-    booking_time = models.CharField(
+    time = models.CharField(
         max_length=20,
         choices=[ 
             ("10:00", "10:00 - 10:45"),
@@ -25,35 +25,29 @@ class Booking(models.Model):
             ("21:00", "21:00 - 21:45"),
             ("22:00", "22:00 - 22:45"),
         ],
-         default="10:00 - 10:45"  #Set the default value to "10:00- 10:45"
+         default="10:00 - 10:45"  # Default shown is "10:00- 10:45"
     )
-    customer_name = models.CharField(max_length=255) # Name 
-    customer_email = models.EmailField() # Email
+    name = models.CharField(max_length=255) # Name 
+    email = models.EmailField() # Email
     people = models.IntegerField(choices=PEOPLE, default=2) # To select how many people 
     created_on = models.DateTimeField(auto_now_add=True) # Registers the data when it was created
     created_by = models.ForeignKey(User, on_delete=models.CASCADE) # Set this to foreign key
 
-    def is_table_available(self):
-        """ 
-        Calculate the total tables booked 
-        for the selected date and time slot
-        """
-    
-        booked_tables = Booking.objects.filter(date=self.date, booking_time=self.booking_time).aggregate(Sum('people'))['people__sum'] or 0
+    def is_available(self):
+        bookings = Booking.objects.filter(date=self.date, time=self.time).aggregate(Sum('people'))['people__sum'] or 0
 
-        # If the current booking is being updated, subtract its people
-        if self.booking_id:
-            booked_tables -= self.people
-        return booked_tables < 25
+        if self.id:
+            bookings -= self.people
+        return bookings < 12
 
     def save(self, *args, **kwargs):
         """ 
-        Check table availability 
+        Check availability 
         """
-        if not self.booking_id:
-            if not self.is_table_available():
-                raise Exception("No tables available for this date and time")
+        if not self.id:
+            if not self.is_available():
+                raise Exception("Sorry, we do not have availability")
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"Booking ID: {self.booking_id}, Date: {self.date}, Time: {self.booking_time}"
+        return f"Booking ID: {self.id}, Date: {self.date}, Time: {self.time}"
