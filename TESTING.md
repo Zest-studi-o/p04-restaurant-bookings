@@ -226,29 +226,29 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 | Functionality | What's being tested | Result |
 |------|-------------|--------|
-| Registration | A new user can create an account successfully. | Pass or Fail |
-|  | The website displays an appropriate error message with hint when validation fails. | Pass or Fail |
-|  | The website displays an appropriate message if link is invalid or token expired | Pass or Fail |
-|  | User is signed in automatically when click confirm button | Pass or Fail |
-| Admin Panel | Admin can login to admin panel. | Pass or Fail |
-|  | Admin can add, edit and delete bookings. | Pass or Fail |
-|  | Admin can add edit and delete menu items. | Pass or Fail |
-|  | Admin can add and delete tables. | Pass or Fail |
-|  | Admin can delete users. | Pass or Fail |
-|  | Admin panel can be accessed by user | Pass or Fail |
-|Login | A registered user can log in successfully. | Pass or Fail |
-|  | The website displays an appropriate error message when a user enters an incorrect email or password. | Pass or Fail |
-|  | A logged-in user can sign out successfully. | Pass or Fail |
-|  | The website displays an appropriate error message when a user enters invalid data (e.g., date before current day, not allowed charset). | Pass or Fail |
-|  | A user cannot edit or delete another user's profile | Pass or Fail |
-|Bookings CRUD | Verify that a logged-in user can create, edit delete his own bookings. | Pass or Fail |
-|  | Confirmation message is displayed when changes are saved | Pass or Fail |
-|  | User is asked for confirmation before deleting booking| Pass or Fail |
-|  | Click on delete confirmation button deletes bookings | Pass or Fail |
-|  | A user can delete own bookings | Pass or Fail |
-|  | Only authenticated users can book reservations | Pass or Fail |
-|  | Confirmation message is displayed when booking is updated or deleted | Pass or Fail |
-|Menu| A logged-in admin can add, edit or delete menu items. | Pass or Fail |
+| Registration | A new user can create an account successfully. | Pass |
+|  | The website displays an appropriate error message with hint when validation fails. | Pass |
+|  | The website displays an appropriate message if link is invalid or token expired | Pass |
+|  | User is signed in automatically when click confirm button | Pass |
+| Admin Panel | Admin can login to admin panel. | Pass |
+|  | Admin can add, edit and delete bookings. | Pass |
+|  | Admin can add edit and delete menu items. | Pass |
+|  | Admin can add and delete guests. | Pass |
+|  | Admin can delete users. | Pass |
+|  | Admin panel can be accessed by user | Pass |
+|Login | A registered user can log in successfully. | Pass |
+|  | The website displays an appropriate error message when a user enters an incorrect email or password. | Pass |
+|  | A logged-in user can sign out successfully. | Pass |
+|  | The website displays an appropriate error message when a user enters invalid data (e.g., date before current day, not allowed charset). | Pass |
+|  | A user cannot edit or delete another user's profile | Pass |
+|Bookings CRUD | Verify that a logged-in user can create, edit delete his own bookings. | Pass |
+|  | Confirmation message is displayed when changes are saved | Pass |
+|  | User is asked for confirmation before deleting booking| Pass |
+|  | Click on delete confirmation button deletes bookings | Pass  |
+|  | A user can delete own bookings | Pass |
+|  | Only authenticated users can book reservations | Pass |
+|  | Confirmation message is displayed when booking is updated or deleted | Pass |
+|Menu| A logged-in admin can add, edit or delete menu items. | Pass |
 
 
 ---
@@ -261,12 +261,11 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 | --- | ----- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | 1   | A     | Django models |The models do not work correctly   | Create models>Run the server> Go to the website & log in in the admin panel> click on Bookatable > Observe the issue with the page not loading        | Error message when clicking on bookatable                ![Models Error](docs/testing/1/models_error.jpg)                          |Please ensure that bookings are loading correctly| There was a message informing that the models have migrated correctly but when accessing the site this was not working   ![No changes](docs/testing/1/no_changes.jpg)  Tried to migrate again but when doing this the terminal informed that the migrations where up to date, as the message was saying that booking_id was not existing but it did, and considering another model was tried before, the server was set to run local, ![No changes](docs/testing/1/local.jpg) and the error was logged to the console,  ![Error log](docs/testing/1/error_log.jpg)  , Django migrations were removed and the database was reset. After this the migrations were run again successfully and this solved the issue.| FIXED|
 
-| 2   | A     | Menu |The menu entry appears repeated   | Login as an admin > Go to the menu app> Enter an item and save it> Observe the issue with the item displaying twice      | The entry appears twice on screen                ![Repeated item](docs/testing/2/repeated_item.jpg)                          |Please ensure that the menu items are displaying correctly and only once per entry| Solution not found yet| NOT FIXED|
+| 2   | A     | Menu |The menu entry appears repeated   | Login as an admin > Go to the menu app> Enter an item and save it> Observe the issue with the item displaying twice      | The entry appears twice on screen                ![Repeated item](docs/testing/2/repeated_item.jpg)                          |Please ensure that the menu items are displaying correctly and only once per entry| It looks like the issue no longer occurs while progressing in the project and might have been a low reproduction rate bug| FIXED|
 
+| 3   | A     | Admin Login |The admin cannot access the menus using the login panel   | Go to login> enter superuser details>       | The entry appears twice on screen                ![Repeated item](docs/testing/2/repeated_item.jpg)                          |Please ensure that the menu items are displaying correctly and only once per entry| It looks like the issue no longer occurs while progressing in the project and might have been a low reproduction rate bug| FIXED|
 
 ### Known Bugs
-
-docs/testing/1/repeated_item.jpg
 
 Abc
 

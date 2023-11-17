@@ -229,6 +229,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 - [Women on bench](https://www.pexels.com/photo/two-smiling-women-sitting-on-wooden-bench-1267696/)
 - [Avocado & egg toast](https://www.pexels.com/photo/pastry-and-boiled-egg-on-plate-566566/)
 - [Restaurant interior](https://www.freepik.com/free-photo/table-set-dinning-table_1241187.htm#query=healty%20restaurant%20interior&position=3&from_view=search&track=ais&uuid=26e9e053-f786-4e5b-a04b-8884c2aa0d61)
+- [noodles](https://www.freepik.com/free-photo/high-angle-tasty-arrangement-noodles-table_11741204.htm#query=pad%20thai&position=25&from_view=search&track=ais&uuid=09a5bf0a-2bcc-449b-b2f7-9ed50b944466)
 
 ### Acknowledgments
 
