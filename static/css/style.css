@@ -38,7 +38,7 @@ html {
 
 /* Header styles */
 .header-content {
-    background-image: url('https://res.cloudinary.com/dquap1fh6/image/upload/v1699836236/Quinoa-Avocado-Salad-with-Buttermilk-Dressing-cdf224d47a154de9a0bc6c159f9c5543_ateiea.jpg');
+    background-image: url('https://res.cloudinary.com/dquap1fh6/image/upload/v1700178852/pexels-foodie-factor-566566_dzmfhp.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -236,7 +236,7 @@ small {
 }
 
 .btn-primary:hover {
-    background-color: #ff4500;
+    background-color: var(--cafe);
 }
 
 /* Style Edit and Delete buttons */
@@ -404,3 +404,6 @@ h2 {
     font-weight: bold;
     margin: 10px 0;
 }
+
+
+/* MEDIA QUERIES */

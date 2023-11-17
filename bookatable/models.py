@@ -30,7 +30,7 @@ class Booking(models.Model):
     customer_name = models.CharField(max_length=255) # Name 
     customer_email = models.EmailField() # Email
     people = models.IntegerField(choices=PEOPLE, default=2) # To select how many people 
-    created_on = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=True) # Registers the data when it was created
     created_by = models.ForeignKey(User, on_delete=models.CASCADE) # Set this to foreign key
 
     def is_table_available(self):

@@ -101,6 +101,9 @@ Project goals:
 ![Logo](image)
 
 **Colour Palette**
+
+Extracted from a picture with healthy restaurant theme, which was picked for the cover image, using the colour picker, after picking the cover image this matching colour palette was selected using [Coolors](https://coolors.co/) and other pictures containing the same colour scheme for a consistent visual design.
+
 ![Colour palette](docs/readme/colour-palette.png)
 ---
 
@@ -222,7 +225,10 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Media
 
-- [Ramen bowl](lhttps://www.pexels.com/photo/a-bowl-of-ramen-17952227/)
+- [Ramen bowl](https://www.pexels.com/photo/a-bowl-of-ramen-17952227/)
+- [Women on bench](https://www.pexels.com/photo/two-smiling-women-sitting-on-wooden-bench-1267696/)
+- [Avocado & egg toast](https://www.pexels.com/photo/pastry-and-boiled-egg-on-plate-566566/)
+
 
 ### Acknowledgments
 
