@@ -30,7 +30,7 @@ class BookingForm(forms.ModelForm):
                 raise forms.ValidationError("Please select a future time")
 
     date = forms.DateField(
-        help_text="Please enter a future date",
+        help_text="Please select a date",
         widget=forms.widgets.DateInput(attrs={"type": "date"}),
     )
     time = forms.ChoiceField(

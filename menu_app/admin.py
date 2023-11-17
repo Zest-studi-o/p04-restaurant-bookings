@@ -12,9 +12,8 @@ from .models import MenuItem
 @admin.register(MenuItem)
 class Menu(admin.ModelAdmin):
     list_display = (
-        "menu_name",
+        "name",
         "description",
         "image_url",
         "price",
-        "category"
     )

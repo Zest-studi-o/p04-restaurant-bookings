@@ -44,9 +44,9 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
 
         if people_on_datetime + form.instance.people <= 25:
             form.save()
-            messages.success(self.request, 'Booking successful!')
+            messages.success(self.request, 'Your booking has been successful!')
         else:
-            messages.error(self.request, 'Sorry, table not available for your selection')
+            messages.error(self.request, 'Sorry, we do not have availability')
         try:
             return super().form_valid(form)
         except ValidationError:
@@ -66,7 +66,7 @@ class BookingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return self.request.user == self.get_object().created_by
 
     def form_valid(self, form):
-        messages.success(self.request, 'Booking has been updated successfully!')
+        messages.success(self.request, 'Your booking has been updated successfully!')
         return super().form_valid(form)
 
 
@@ -78,7 +78,7 @@ class BookingDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     template_name = 'booking_confirm_delete.html'
 
     def delete(self, request, *args, **kwargs):
-        messages.success(self.request, 'Booking has been deleted successfully')
+        messages.success(self.request, 'Your booking has been deleted successfully')
         return super().delete(request, *args, **kwargs)
 
     success_url = reverse_lazy('booking-list')
