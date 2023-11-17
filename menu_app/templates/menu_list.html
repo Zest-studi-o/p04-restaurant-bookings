@@ -6,18 +6,17 @@
         <div class="center-container">
             <div class="flex f-column a-center">
                 <!-- Link to Login/Register page -->
-                <h2 class="a-center"><strong>****** Menu *******</strong></h2>
+                <h2 class="a-center"><strong>Menu</strong></h2>
                 {% if not user.is_authenticated %}
                 <div class="menu-page">
-                    <p class="menu-p">If you would like to book a table,
+                    <p class="menu-p">To enjoy all features,
                         please <span><a class="authenticate-link" href="{% url 'account_login' %}"><b>LOGIN</b></a> / <a
                                 class="authenticate-link" href="{% url 'account_signup' %}"><b>REGISTER</b></a></span>
                     </p>
                 </div>
                 {% endif %}
                 <br>
-                <div class="menu-list"
-                    style="overflow-x: scroll; overflow-y: scroll; max-height: 400px; max-width: 800px;">
+                <div class="menu-list" style="overflow-x: scroll; overflow-y: scroll;">
                     {% for meal in object_list %}
                     <!-- Menu item container -->
                     <div class="meal">
@@ -36,7 +35,6 @@
                             </div>
                             <div class="row">
                                 <p class="hr">
-                                    .....................................................................................................................................................................................................................
                                 </p>
                             </div>
                         </div>

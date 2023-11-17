@@ -6,6 +6,7 @@
     --orange: #d7a51e;
     --red: #BC4B51;
     --cafe: #302201;
+    --grey: #d0c9c9;
     --black: #2F2F2F;
 }
 
@@ -374,17 +375,19 @@ h2 {
 /* Menu items styles */
 
 .meal {
-    margin: 20px 0;
-    background-color: var(--white);
+    /* display: flex;*/
+    margin: 5% 0;
+    background-color: var(--grey);
     border-radius: 5%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
 .dish img {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
     display: block;
+    align-content: stretch;
     margin: 5% auto;
     border-radius: 3%;
 }
