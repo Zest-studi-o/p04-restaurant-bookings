@@ -1,6 +1,6 @@
 # MEGARESTAURANT
 
-![The Restaurant Booking system](link)
+![The Restaurant Booking system mockup](link)
 
 A web application that enables users to know more about the restaurant, manage bookings and view the menu, as well as a tool for restaurant owners and staff to organise their bookings.
 
@@ -270,6 +270,6 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 ### Known Bugs
 
-Abc
+When trying to reset the password in the deployed app, there is an error message 505, it was not possible to implement authentication via email within Gitpod as mentioned in this [Bug report](https://github.com/gitpod-io/gitpod/issues/965), The ports used to send emails from Gitpod were blocked so it was impossible to set up email confirmation on account creation and also forgot password links.
 
 ---
