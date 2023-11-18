@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 :root {
     --white: #fff;
@@ -34,7 +35,7 @@ html {
 .navbar-brand {
     font-weight: 700;
     font-size: 24px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .nav-link {
@@ -42,17 +43,66 @@ html {
     text-transform: uppercase;
 }
 
-/* Header styles */
-.header-content {
-    background-image: url('https://res.cloudinary.com/dquap1fh6/image/upload/v1700178852/pexels-foodie-factor-566566_dzmfhp.jpg');
-    background-size: cover;
-    background-position: center;
+.navbar a:hover {
+    color: var(--cafe);
+}
+
+/* Logo */
+.logo-font {
+    font-family: dancing script, cursive;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand {
+    font-family: dancing script, cursive;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+---------------------
+   HOME PAGE STYLES 
+---------------------
+*/
+/* Hero image */
+.image-container {
+    background-color: black;
     color: var(--white);
-    padding: 100px 0;
+    position: relative;
     text-align: center;
+}
+
+.centered-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px white;
+    padding: 15px;
     text-transform: uppercase;
+    color: var(--white);
     text-shadow: 2px 2px #0c0c0cfb;
-    font-weight: 650;
+    box-shadow: 2px 2px #0c0c0cfb;
+}
+
+.event-image>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-container {
+    background-color: black;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.first-image {
+    max-height: 700px;
+    width: 80%;
 }
 
 .header-content h1 {
@@ -63,6 +113,11 @@ html {
 
 .header-content p {
     font-size: 18px;
+}
+
+.events-info-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* About us styles */
@@ -94,14 +149,14 @@ footer a {
 }
 
 footer a:hover {
-    color: #3a3a3a;
+    color: var(--cafe);
     transition: color 0.3s;
 }
 
 footer i:hover {
     cursor: pointer;
     transform: scale(1.1);
-    color: #3a3a3a;
+    color: var(--cafe);
 }
 
 /* 
@@ -118,7 +173,7 @@ footer i:hover {
 }
 
 .page-title {
-    background-color: var(--green);
+    background-color: var(--cafe);
     color: var(--white);
     padding: 20px 0;
     text-align: center;
@@ -212,7 +267,7 @@ small {
 }
 
 .primaryAction:hover {
-    background-color: #0056b3;
+    background-color: var(--orange);
 }
 
 /* 
@@ -221,28 +276,27 @@ small {
 ----------------------
 */
 
-/* booking_list */
-/* Style the table */
+/* Table styles*/
 .table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-/* Style table header */
+/* able styles header */
 .table th {
     background-color: #f2f2f2;
     text-align: left;
     padding: 10px;
 }
 
-/* Style table rows */
+/* Table styles rows */
 .table td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 
-/* Style Create Booking button */
+/* Make a Booking button */
 .btn-primary {
     background-color: var(--green);
     color: var(--white);
@@ -250,27 +304,24 @@ small {
     padding: 10px 20px;
     border: none;
     margin-top: 10px;
-    /* Add margin to separate the button on mobile */
 }
 
 .btn-primary:hover {
     background-color: var(--cafe);
 }
 
-/* Style Edit and Delete buttons */
+/* Edit & Delete buttons */
 .btn-primary,
 .btn-danger {
     margin-right: 5px;
 }
 
-/* Style the page header */
+/* Page header */
 h1 {
     color: #333;
     margin-top: 20px;
-    /* Add margin to separate the header on mobile */
 }
 
-/* Add some spacing to the page */
 .content {
     margin: 20px;
 }
@@ -279,9 +330,6 @@ h1 {
 ------------------
    BOOKING
 ------------------
-*/
-/* Booking_form */
-
 /* Style form validation errors */
 .errorlist {
     color: red;
@@ -290,7 +338,7 @@ h1 {
     list-style: none;
 }
 
-/* Booking_confirm_delete */
+/* Delete */
 
 /* Style the confirmation message */
 p {
@@ -323,7 +371,7 @@ p {
 }
 
 .btn-secondary:hover {
-    background-color: #000;
+    background-color: var(--cafe);
 }
 
 
@@ -331,8 +379,6 @@ p {
 ------------------
    MENU STYLES 
 ------------------
-*/
-/* menu_list */
 
 /* Container styles */
 .container {
@@ -356,7 +402,7 @@ p {
 /* Menu header styles */
 h2 {
     font-size: 28px;
-    color: #333;
+    color: var(--black);
 }
 
 /* Authentication link styles */
@@ -485,7 +531,6 @@ h2 {
         margin: 10px 0;
     }
 
-    /* Table -To scroll horizontally on small screens */
     .table {
         overflow-x: auto;
     }

@@ -1,32 +1,122 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block content %}
-
-<!-- Header content -->
-<div class="header-content">
-    <div class="container">
-        <h1>Welcome to MegaRestaurant</h1>
-        <p>A Healthy Restaurant that you will never forget</p>
-    </div>
-</div>
-<!-- Main content -->
-<div class="main-content">
-    <div class="container">
-        <!-- About us section -->
-        <section id="about-us" class="text-center">
-            <h2 class="welcome"><span>About Us<i class="fa-solid fa-utensils" aria-hidden="true"></i></span>
-            </h2>
-            <div id="about-text">
-                <p>A Mega Restaurant you will never forget.
-                    Restaurant intro</p>
-            </div>
-            <div class="text-center">
-                <img src="{% static 'images/restaurant-interior.webp' %}" alt="People at MegaRestaurant having fun"
-                    class="img-fluid">
-
-            </div>
-        </section>
-    </div>
+<!-- Hero section-->
+<div class="image-container">
+    <img class="d-block w-90 m-auto first-image" src="{% static 'images/bodegon.jpg' %}"
+        alt="Picture of foods on a dark background">
+    <h1 class="centered-text">MegaRestaurant</h1>
 </div>
 
-{% endblock %}
+<h2 class="text-center heading-space logo-font">Our Venue</h2>
+<!-- Restaurant Cards -->
+
+<!--Group of cards-->
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'images/people-restaurant.webp' %}" class="card-img-top"
+                    alt="Dark image of the dive style bar">
+                <div class="card-body">
+                    <h5 class="card-title">Bar</h5>
+                    <p class="card-text">
+                        bar intro
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'images/women-bench.jpg' %}" class="card-img-top" alt="Image description">
+                <div class="card-body">
+                    <h5 class="card-title">Restaurant</h5>
+                    <p class="card-text">Restaurant intro.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'images/restaurant-interior.webp' %}" class="card-img-top" alt="Image description">
+                <div class="card-body">
+                    <h5 class="card-title">Venue</h5>
+                    <p class="card-text">
+                        Venue intro
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Events Section-->
+<h3 class="text-center heading-space logo-font">Events</h3>
+
+<div class="container events-info-container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 event-image">
+            <img src="{% static 'images/outdoor-restaurant.jpg' %}" alt="Image description">
+        </div>
+        <div class=" col-sm-12 col-md-6">
+            <p>Here at Megarestaurant blabla.
+                abc.<br><br>
+                abc<br><br>
+                abc<br><br>
+                <strong>abc</strong>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--Upcoming Events-->
+<h3 class="text-center heading-space logo-font">Upcoming Events</h3>
+<!--Card Group-->
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'images/yogurt-dark-bg.jpg' %}" class="card-img-top" alt="Image description">
+                <div class="card-body">
+                    <h5 class="card-title">Event 1</h5>
+                    <p class="card-text">
+                        abc.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">date</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'images/yogurt-dark-bg.jpg' %}" class="card-img-top" alt="Image description">
+                <div class="card-body">
+                    <h5 class="card-title">Event 2</h5>
+                    <p class="card-text">abc
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">date</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'images/yogurt-dark-bg.jpg' %}" class="card-img-top" alt="Image description">
+                <div class="card-body">
+                    <h5 class="card-title">Event</h5>
+                    <p class="card-text">
+                        Abc
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">date</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
