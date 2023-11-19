@@ -108,8 +108,8 @@ html {
 }
 
 .first-image {
-    max-height: 700px;
-    width: 80%;
+    width: 100%;
+    height: auto;
 }
 
 .header-content h1 {
@@ -551,5 +551,30 @@ h2 {
 
     .table {
         overflow-x: auto;
+    }
+}
+
+/* 
+  For very large screens
+*/
+
+@media (min-width: 1250px) {
+    .info-container {
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 1500px) {
+    .info-container {
+        height: auto;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .info-container {
+        height: auto;
+        width: 60%;
     }
 }
