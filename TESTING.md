@@ -269,6 +269,8 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 | 5  | A     | Irresponsive table | The table does not respond as expected in small screens  | Login as admin> Make a booking > Go to the booking list > Reduce the screen size using developer tools > Observe the issue with the table being clipped      | Table being clipped on small screens             ![Table](docs/testing/5/overflow-x-auto.png)                          |Please ensure that the table is fully visible in small screens| The style overflow-x:auto; is applied to style.css for small screens but it is not being shown on screen. This issue is shown only in the developer tools when resizing the vindow ![Resizing window dev tools](docs/testing/5/resize-window.png)if picking a device on developer tools or selecting responsive dimensions it works well, ![Dimensions Responsive](docs/testing/5/dimensions-responsive.png)also ok tested in smaller devices |FIXED|
 
+| 6 | C     | Contact page front end - nav links |The active link is not being picked up   | Go to the site> Click on contact > Observe the issue with the active style not working      | When in the contact page the active link to indicate that the user is in the page is not working                                          |Please ensure that the page displays correctly| ![Active link not working](docs/testing/6/contact-us-active-link.png) | NOT FIXED|
+
 
 
 ### Known Bugs
