@@ -58,7 +58,7 @@ html {
     font-family: dancing script, cursive;
     font-size: 40px;
     padding: 0;
-    margin: 0;
+    margin: 3% 0 0;
 }
 
 .navbar-brand {
@@ -121,10 +121,11 @@ html {
     font-size: 18px;
 }
 
+/* 
 .events-info-container {
     margin-top: 40px;
     margin-bottom: 40px;
-}
+}*/
 
 /* About us styles */
 .welcome i {

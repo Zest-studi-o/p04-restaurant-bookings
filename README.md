@@ -111,7 +111,9 @@ Extracted from a picture with healthy restaurant theme, which was picked for the
 
 In the future, I would like to:
 
-- Feature not implemented
+- Add different menus, such as cocktail menus, set menus, group menus.
+
+- Events bookings (on top of regular bookings) in which the user can specify what event they would like to attend, or big group bookings.
 
 ---
 
@@ -222,8 +224,25 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 ### Content
 
 - [Ramen](https://ramen.ie/menu/)
+- [Odeon](https://odeon.ie/)
 
 ### Media
+
+- [Luxury dining table](https://www.freepik.com/free-ai-image/luxury-dining-room-illuminated-by-candlelight-glow-generated-by-ai_41481488.htm)
+
+- [Restaurant](https://www.freepik.com/free-ai-image/luxury-dining-room-with-elegant-decor-lighting-generated-by-ai_43114238.htm#fromView=search&term=luxury+dinig&page=1&position=1&track=ais_ai_generated&regularType=ai&uuid=d85d7b6b-30ba-4e33-bfef-9d422d13368e)
+
+- [Terrace](https://www.freepik.com/free-ai-image/rustic-patio-with-deck-furniture-vegetation_58853269.htm#fromView=search&term=fine+dining+terrace&page=1&position=12&track=ais_ai_generated&regularType=ai&uuid=bb75ddf8-e536-4c36-9d1f-baaa12b09542)
+
+- [Cocktail bar](https://www.freepik.com/free-photo/bartender-making-delicious-refreshing-cocktail_18155424.htm#query=cocktail%20bar&position=5&from_view=search&track=ais&uuid=3b38512a-cffa-4ffd-b622-2c76840e2de4)
+
+- [Events](https://www.pexels.com/es-es/foto/foto-de-mujeres-con-mascaras-787961/)
+
+- [Thursdays Night Club](https://www.freepik.com/free-photo/nightlife-people-having-fun-bars-clubs_18007731.htm#query=night%20club&position=8&from_view=search&track=ais&uuid=ba833ca9-c2d7-4c7c-8317-ab3ee2b78b96)
+
+- [Saturdays Night Club](hhttps://www.freepik.com/free-photo/close-up-nightlife-drinks-bar_18007751.htm#&position=45&from_view=collections&uuid=7dda27e0-67c9-41a0-b0e2-a0e98f7f5198)
+
+- [Christmas Party Nights](https://www.freepik.com/free-photo/wonderful-woman-holding-sparkle-balloons_12307032.htm#page=2&query=christmas%20party%20night&position=1&from_view=search&track=ais&uuid=78c9ed6a-1b1d-4afe-9c61-7483e36fb5ac)
 
 - [Ramen bowl](https://www.pexels.com/photo/a-bowl-of-ramen-17952227/)
 - [Gyozas](https://www.pexels.com/photo/deep-fried-gyoza-5182675/)
