@@ -3,7 +3,7 @@
 
 :root {
     --white: #fff;
-    --grey: #d0c9c9;
+    --grey: #dde2e9;
     --dark-blue: #0B1522;
     --cafe: #302201;
     --black: #0d0d0d;
@@ -287,6 +287,7 @@ small {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: var(--grey);
 
 }
 
