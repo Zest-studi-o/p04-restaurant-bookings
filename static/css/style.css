@@ -3,12 +3,18 @@
 
 :root {
     --white: #fff;
-    --green: #9EB25D;
-    --orange: #d7a51e;
-    --red: #BC4B51;
-    --cafe: #302201;
     --grey: #d0c9c9;
-    --black: #2F2F2F;
+    --dark-blue: #0B1522;
+    --cafe: #302201;
+    --black: #0d0d0d;
+
+    --vivid-amber: #fcb900;
+    --dark-yellow: #d7a51e;
+    --wild-orange: #EF7C1B;
+    --vivid-orange: #ff6900;
+
+    --green: #9EB25D;
+    --red: #e41c26;
 }
 
 body,
@@ -144,19 +150,19 @@ footer {
 }
 
 footer a {
-    color: var(--green);
+    color: var(--cafe);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--cafe);
+    color: var(--vivid-amber);
     transition: color 0.3s;
 }
 
 footer i:hover {
     cursor: pointer;
     transform: scale(1.1);
-    color: var(--cafe);
+    color: var(--vivid-amber);
 }
 
 /* 
@@ -190,7 +196,7 @@ footer i:hover {
 }
 
 .contact-info h4 {
-    color: var(--green);
+    color: var(--vivid-amber);
 }
 
 .contact-info p {
@@ -207,11 +213,11 @@ footer i:hover {
 }
 
 .opening-hours h4 {
-    color: var(--green);
+    color: var(--vivid-amber);
 }
 
 .directions h4 {
-    color: var(--green);
+    color: var(--vivid-amber);
 }
 
 iframe {
@@ -244,7 +250,7 @@ iframe {
 }
 
 .authenticate-link {
-    color: var(--green);
+    color: var(--vivid-amber);
     text-decoration: none;
 }
 
@@ -257,7 +263,7 @@ small {
 }
 
 .primaryAction {
-    background-color: var(--green);
+    background-color: var(--vivid-amber);
     color: var(--white);
     padding: 10px 20px;
     border: none;
@@ -267,7 +273,7 @@ small {
 }
 
 .primaryAction:hover {
-    background-color: var(--orange);
+    background-color: var(--vivid-amber);
 }
 
 /* 
@@ -281,9 +287,19 @@ small {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+
 }
 
-/* able styles header */
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: var(--vivid-amber)
+}
+
+/* Table styles header */
 .table th {
     background-color: #f2f2f2;
     text-align: left;
@@ -293,21 +309,21 @@ small {
 /* Table styles rows */
 .table td {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
 }
 
 /* Make a Booking button */
 .btn-primary {
-    background-color: var(--green);
+    background-color: var(--black);
     color: var(--white);
     text-decoration: none;
+    margin: 3% 0;
     padding: 10px 20px;
     border: none;
     margin-top: 10px;
 }
 
 .btn-primary:hover {
-    background-color: var(--cafe);
+    background-color: var(--vivid-amber);
 }
 
 /* Edit & Delete buttons */
@@ -351,13 +367,14 @@ p {
     background-color: var(--red);
     color: var(--white);
     padding: 10px 20px;
+    margin: 3% 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .btn-danger:hover {
-    background-color: var(--orange);
+    background-color: var(--vivid-amber);
 }
 
 /* Style the Cancel button */
@@ -371,7 +388,7 @@ p {
 }
 
 .btn-secondary:hover {
-    background-color: var(--cafe);
+    background-color: var(--vivid-amber);
 }
 
 
@@ -408,7 +425,7 @@ h2 {
 /* Authentication link styles */
 .authenticate-link {
     text-decoration: none;
-    color: var(--green);
+    color: var(--vivid-amber);
 }
 
 /* Menu list styles */
@@ -444,14 +461,14 @@ h2 {
 
 .meal-name {
     font-size: 20px;
-    color: #333;
+    color: var(--vivid-amber);
     margin: 0;
 }
 
 .price {
     font-size: 18px;
-    color: var(--green);
     margin: 0;
+    color: var(--vivid-orange);
 }
 
 .description {
