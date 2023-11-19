@@ -265,7 +265,10 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 | 3  | A     | Static files |Heroku is not picking up css   | Go to the deployed app> observe the issue with the styles & images not loading      | Css not loading                                         |Please ensure that the page displays correctly| Fix typos in settings.py ![Typo](docs/testing/3/typo.png) & add different order for the allowed apps [Typo](docs/testing/3/order.png)| FIXED|
 
-| 4  | A     | Error 505 |   | Go to the deployed app> Click on login, sign in or register > Observe the issue with the 505 error      | Error 505 on heroku deployed app when trying to access the database               ![Error 505](docs/testing/4/error-505.jpg)                          |Please ensure that the database works properly| The database was finding inconsistencies with previous data, as before deleting all remaining data from the local database, resetting elephant database and migrating the changes solved the issue ![Migrations](docs/testing/4/4-solved.png)| FIXED|
+| 4  | A     | Error 505 | Error 505 shown when clicking on any database linked field  | Go to the deployed app> Click on login, sign in or register > Observe the issue with the 505 error      | Error 505 on heroku deployed app when trying to access the database               ![Error 505](docs/testing/4/error-505.jpg)                          |Please ensure that the database works properly| The database was finding inconsistencies with previous data, as before deleting all remaining data from the local database, resetting elephant database and migrating the changes solved the issue ![Migrations](docs/testing/4/4-solved.png)| FIXED|
+
+| 5  | A     | Irresponsive table | The table does not respond as expected in small screens  | Login as admin> Make a booking > Go to the booking list > Reduce the screen size using developer tools > Obsereve the issue with the table being clipped      | Table being clipped on small screens             ![Table](docs/testing/5/overflow-x-auto.png)                          |Please ensure that the table is fully visible in small screens| The style overflow-x:auto; is applied to style.css for small screens but it is not being shown on screen. Solution to find |NOT  FIXED|
+
 
 
 ### Known Bugs
