@@ -7,6 +7,6 @@ from django.views.generic import TemplateView
 
 class Contact(TemplateView):
     """
-    A view that only loads the contact html template
+    A view to load the contact html template
     """
     template_name = "contact.html"

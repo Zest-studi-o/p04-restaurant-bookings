@@ -53,8 +53,9 @@ html {
     color: var(--cafe);
 }
 
-/* Logo */
-.logo-font {
+/* Logo - Menu title */
+.logo-font,
+.menu-title {
     font-family: dancing script, cursive;
     font-size: 40px;
     padding: 0;
@@ -336,7 +337,6 @@ tr {
 
 /* Page header */
 h1 {
-    color: #333;
     margin-top: 20px;
 }
 
@@ -508,7 +508,6 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
-
 
     .menu-list {
         max-height: none;
