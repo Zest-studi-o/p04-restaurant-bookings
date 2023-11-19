@@ -247,6 +247,8 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 - [Ramen bowl](https://www.pexels.com/photo/a-bowl-of-ramen-17952227/)
 - [Gyozas](https://www.pexels.com/photo/deep-fried-gyoza-5182675/)
 - [Ramen bowl mushrooms](https://www.freepik.com/free-ai-image/healthy-gourmet-pork-ramen-noodles-soup-generated-by-ai_42129604.htm#query=tofu%20ramen&position=15&from_view=search&track=ais&uuid=9aec8d45-85cf-4316-8e35-812b51fc3d9a)
+
+- [Singapour Noodles](https://www.pexels.com/photo/vegetable-salad-3026808/)
 - [Women on bench](https://www.pexels.com/photo/two-smiling-women-sitting-on-wooden-bench-1267696/)
 - [Avocado & egg toast](https://www.pexels.com/photo/pastry-and-boiled-egg-on-plate-566566/)
 - [Restaurant interior](https://www.freepik.com/free-photo/table-set-dinning-table_1241187.htm#query=healty%20restaurant%20interior&position=3&from_view=search&track=ais&uuid=26e9e053-f786-4e5b-a04b-8884c2aa0d61)
