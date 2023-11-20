@@ -402,7 +402,6 @@ p {
     background-color: var(--vivid-amber);
 }
 
-
 /* 
 ------------------
    MENU STYLES 
@@ -515,17 +514,13 @@ h2 {
 ------------------
 */
 
+/* For larger screens*/
+/* Home*/
 
-/* 
-  For very large screens
-*/
-/* 
-  Home
-*/
-@media (min-width: 1800px) {
+@media (min-width: 1300px) {
     .info-container {
         height: auto;
-        width: 60%;
+        width: 80%;
     }
 }
 
@@ -536,15 +531,7 @@ h2 {
     }
 }
 
-@media (min-width: 1250px) {
-    .info-container {
-        width: 90%;
-    }
-}
-
-/* 
-  Menu
-*/
+/* Menu*/
 
 @media (max-width: 1200px) {
     .dish img {
