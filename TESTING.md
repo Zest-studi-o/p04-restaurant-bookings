@@ -1,6 +1,6 @@
 # MEGARESTAURANT
 
-![The Restaurant Booking system mockup](link)
+![The Restaurant Booking system mockup](docs/readme/project-mockup.jpg)
 
 A web application that enables users to know more about the restaurant, manage bookings and view the menu, as well as a tool for restaurant owners and staff to organise their bookings.
 
