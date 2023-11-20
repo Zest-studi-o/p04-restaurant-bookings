@@ -48,33 +48,28 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if url_name == 'account_logout' %}active{% endif %}"
-                                href="/account/logout/">Logout</a>
+                                href="/account/logout/">Sign Out</a>
                         </li>
                         {% else %}
                         <li class="nav-item">
                             <a class="nav-link {% if url_name == 'account_signup' %}active{% endif %}"
-                                href="/account/signup/">Register</a>
+                                href="/account/signup/">Sign Up</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if url_name == 'account_login' %}active{% endif %}"
-                                href="/account/login/">Login</a>
+                                href="/account/login/">Log In</a>
                         </li>
                         {% endif %}
 
                         <li class="nav-item">
                             <a class="nav-link {% if url_name == 'contact_us' %}active{% endif %}"
                                 href="/contact/">Contact</a>
-
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         {% endwith %}
-
-
-
-
 
     </header>
     <main class="flex-shrink-0 main-bg">
@@ -93,7 +88,7 @@
         {% endif %}
         {% else %}
         <div class="alert alert-warning" role="alert">
-            Please <a href="/account/login/">log in</a> to make a booking.
+            Please <a href="/account/login/">Log In</a> enjoy all features.
         </div>
         {% endif %}
     </div>
