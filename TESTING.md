@@ -76,9 +76,18 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ![Contact Mobile](docs/testing/lighthouse/mobile/lh-contact-mobile.jpg)<br><br>
 
 ---
+### Jigsaw CSS Validator
+
+I used [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to test styles.css and found no issues.
+![Jigsaw CSS Validator](docs/testing/w3-css/w3-validator.png)
 
 ---
+### W3 Html Validator
 
+I used [W3 Html Validator](https://validator.w3.org/) to test all html pages and found no issues.
+![Jigsaw CSS Validator](docs/testing/w3-html/html-validator.png)
+
+---
 ## MANUAL TESTING
 
 ### Testing User Stories

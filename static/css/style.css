@@ -22,7 +22,8 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background-color: var(--white) font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    font-family: 'Roboto', sans-serif;
 }
 
 /* 
@@ -33,7 +34,8 @@ html {
 
 /* Navigation styles */
 .navbar {
-    background-color: var(--white) box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -70,8 +72,11 @@ html {
     margin: 0;
 }
 
---------------------- HOME PAGE STYLES --------------------- */
-
+/* 
+-----------------------
+   HOME PAGE STYLES
+-----------------------
+*/
 /* Hero image */
 .image-container {
     background-color: black;
