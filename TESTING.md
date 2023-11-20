@@ -42,11 +42,38 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 #### Desktop Results
 
-![Desktop](docs/testing/lighthouse/lighthouse-desktop.png)
+##### Home
+![Home Desktop](docs/testing/lighthouse/desktop/lh-home-desktop.jpg)<br><br>
+
+##### Menu
+![Menu Desktop](docs/testing/lighthouse/desktop/lh-menu-desktop.jpg)<br><br>
+
+##### Sing up
+![Sign Up Desktop](docs/testing/lighthouse/desktop/lh-signup-desktop.jpg)<br><br>
+
+##### Login
+![Login Desktop](docs/testing/lighthouse/desktop/lh-login-desktop.jpg)<br><br>
+
+##### Contact
+![Contact Desktop](docs/testing/lighthouse/desktop/lh-contact-desktop.jpg)<br><br>
+
 
 #### Mobile Results
 
-![Mobile](docs/testing/lighthouse/lighthouse-mobile.png)
+##### Home
+![Home Mobile](docs/testing/lighthouse/mobile/lh-home-mobile.jpg)<br><br>
+
+##### Menu
+![Menu Mobile](docs/testing/lighthouse/mobile/lh-menu-mobile.jpg)<br><br>
+
+##### Sing up
+![Sign Up Mobile](docs/testing/lighthouse/mobile/lh-signup-mobile.jpg)<br><br>
+
+##### Login
+![Login Mobile](docs/testing/lighthouse/mobile/lh-login-mobile.jpg)<br><br>
+
+##### Contact
+![Contact Mobile](docs/testing/lighthouse/mobile/lh-contact-mobile.jpg)<br><br>
 
 ---
 
@@ -209,7 +236,9 @@ Full testing was performed on the following devices:
 - Desktop:
   - Custom Gaming computer (Raven) with 2 screens set up 24 inches and Windows OS
 - Laptop:
-  - Mac book Pro 2023 14 inches screen and Mac OS
+  - Mac book Pro 2023 14 inches screen and Mac OS & Mac monitor 27 inches.
+- Tablet:
+  - iPad 9th Gen.
 - Android Mobile Devices:
   - Samsung Galaxy S20
   - Samsung Galaxy A50
@@ -259,17 +288,17 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 | ID  | CLASS | FEATURE/SECTION                 | DESCRIPTION                                                                                                                                                                                                                            | STEPS TO REPRODUCE                                                                                                                                                                           | ACTUAL RESULT                                                               | EXPECTED RESULT                                 | ACTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | STATUS                          |
 | --- | ----- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| 1   | A     | Django models |The models do not work correctly   | Create models>Run the server> Go to the website & log in in the admin panel> click on Bookatable > Observe the issue with the page not loading        | Error message when clicking on bookatable                ![Models Error](docs/testing/1/models_error.jpg)                          |Please ensure that bookings are loading correctly| There was a message informing that the models have migrated correctly but when accessing the site this was not working   ![No changes](docs/testing/1/no_changes.jpg)  Tried to migrate again but when doing this the terminal informed that the migrations where up to date, as the message was saying that the id was not existing but it did, and considering another model was tried before, the server was set to run local, ![No changes](docs/testing/1/local.jpg) and the error was logged to the console,  ![Error log](docs/testing/1/error_log.jpg)  , Django migrations were removed and the database was reset. After this the migrations were run again successfully and this solved the issue.| FIXED|
+| 1   | A     | Django models |The models do not work correctly   | Create models>Run the server> Go to the website & log in in the admin panel> click on Bookatable > Observe the issue with the page not loading        | Error message when clicking on bookatable                ![Models Error](docs/testing/bugs/1/models_error.jpg)                          |Please ensure that bookings are loading correctly| There was a message informing that the models have migrated correctly but when accessing the site this was not working   ![No changes](docs/testingbugs//1/no_changes.jpg)  Tried to migrate again but when doing this the terminal informed that the migrations where up to date, as the message was saying that the id was not existing but it did, and considering another model was tried before, the server was set to run local, ![No changes](docs/testing/bugs/1/local.jpg) and the error was logged to the console,  ![Error log](docs/testing/bugs/1/error_log.jpg)  , Django migrations were removed and the database was reset. After this the migrations were run again successfully and this solved the issue.| FIXED|
 
-| 2   | A     | Menu |The menu entry appears repeated   | Login as an admin > Go to the menu app> Enter an item and save it> Observe the issue with the item displaying twice      | The entry appears twice on screen                ![Repeated item](docs/testing/2/repeated_item.jpg)                          |Please ensure that the menu items are displaying correctly and only once per entry| It looks like the issue no longer occurs while progressing in the project and might have been a low reproduction rate bug| FIXED|
+| 2   | A     | Menu |The menu entry appears repeated   | Login as an admin > Go to the menu app> Enter an item and save it> Observe the issue with the item displaying twice      | The entry appears twice on screen                ![Repeated item](docs/testing/bugs/2/repeated_item.jpg)                          |Please ensure that the menu items are displaying correctly and only once per entry| It looks like the issue no longer occurs while progressing in the project and might have been a low reproduction rate bug| FIXED|
 
-| 3  | A     | Static files |Heroku is not picking up css   | Go to the deployed app> observe the issue with the styles & images not loading      | Css not loading                                         |Please ensure that the page displays correctly| Fix typos in settings.py ![Typo](docs/testing/3/typo.png) & add different order for the allowed apps [Typo](docs/testing/3/order.png)| FIXED|
+| 3  | A     | Static files |Heroku is not picking up css   | Go to the deployed app> observe the issue with the styles & images not loading      | Css not loading                                         |Please ensure that the page displays correctly| Fix typos in settings.py ![Typo](docs/testing/bugs/3/typo.png) & add different order for the allowed apps [Typo](docs/testing/3/order.png)| FIXED|
 
-| 4  | A     | Error 505 | Error 505 shown when clicking on any database linked field  | Go to the deployed app> Click on login, sign in or register > Observe the issue with the 505 error      | Error 505 on heroku deployed app when trying to access the database               ![Error 505](docs/testing/4/error-505.jpg)                          |Please ensure that the database works properly| The database was finding inconsistencies with previous data, as before deleting all remaining data from the local database, resetting elephant database and migrating the changes solved the issue ![Migrations](docs/testing/4/4-solved.png)| FIXED|
+| 4  | A     | Error 505 | Error 505 shown when clicking on any database linked field  | Go to the deployed app> Click on login, sign in or register > Observe the issue with the 505 error      | Error 505 on heroku deployed app when trying to access the database               ![Error 505](docs/testing/bugs/4/error-505.jpg)                          |Please ensure that the database works properly| The database was finding inconsistencies with previous data, as before deleting all remaining data from the local database, resetting elephant database and migrating the changes solved the issue ![Migrations](docs/testing/4/4-solved.png)| FIXED|
 
-| 5  | A     | Irresponsive table | The table does not respond as expected in small screens  | Login as admin> Make a booking > Go to the booking list > Reduce the screen size using developer tools > Observe the issue with the table being clipped      | Table being clipped on small screens             ![Table](docs/testing/5/overflow-x-auto.png)                          |Please ensure that the table is fully visible in small screens| The style overflow-x:auto; is applied to style.css for small screens but it is not being shown on screen. This issue is shown only in the developer tools when resizing the vindow ![Resizing window dev tools](docs/testing/5/resize-window.png)if picking a device on developer tools or selecting responsive dimensions it works well, ![Dimensions Responsive](docs/testing/5/dimensions-responsive.png)also ok tested in smaller devices |FIXED|
+| 5  | A     | Irresponsive table | The table does not respond as expected in small screens  | Login as admin> Make a booking > Go to the booking list > Reduce the screen size using developer tools > Observe the issue with the table being clipped      | Table being clipped on small screens             ![Table](docs/testing/bugs/5/overflow-x-auto.png)                          |Please ensure that the table is fully visible in small screens| The style overflow-x:auto; is applied to style.css for small screens but it is not being shown on screen. This issue is shown only in the developer tools when resizing the vindow ![Resizing window dev tools](docs/testing/bugs/5/resize-window.png)if picking a device on developer tools or selecting responsive dimensions it works well, ![Dimensions Responsive](docs/testing/bugs/5/dimensions-responsive.png)also ok tested in smaller devices |FIXED|
 
-| 6 | C     | Contact page front end - nav links |The active link is not being picked up   | Go to the site> Click on contact > Observe the issue with the active style not working      | When in the contact page the active link to indicate that the user is in the page was not working, {{url_name}} was added base.html template to check that it was pointing to the correct active link     ![Contact us](docs/testing/6/contact_us.png) and this was rectified as there was a typo saying contact instead of contact_us                                    |Please ensure that the page displays correctly| ![Active link not working](docs/testing/6/contact-us-active-link.png) | FIXED|
+| 6 | C     | Contact page front end - nav links |The active link is not being picked up   | Go to the site> Click on contact > Observe the issue with the active style not working      | When in the contact page the active link to indicate that the user is in the page was not working, {{url_name}} was added base.html template to check that it was pointing to the correct active link     ![Contact us](docs/testing/bugs/6/contact_us.png) and this was rectified as there was a typo saying contact instead of contact_us                                    |Please ensure that the page displays correctly| ![Active link not working](docs/testing/bugs/6/contact-us-active-link.png) | FIXED|
 
 
 
