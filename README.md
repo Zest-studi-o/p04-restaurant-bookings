@@ -98,7 +98,7 @@ Project goals:
 
 - The website visual identity.
 
-![Logo](image)
+![Logo](docs/readme/logo.png)
 
 **Colour Palette**
 

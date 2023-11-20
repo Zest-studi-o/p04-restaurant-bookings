@@ -72,6 +72,21 @@ html {
     margin: 0;
 }
 
+
+.login-stripe {
+    background-color: var(--vivid-amber);
+    color: var(--black);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.login-stripe a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 /* 
 -----------------------
    HOME PAGE STYLES
