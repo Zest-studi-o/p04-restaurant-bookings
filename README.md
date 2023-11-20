@@ -1,10 +1,10 @@
-# THE RESTAURANT BOOKING SYSTEM
+# MEGARESTAURANT BOOKING SYSTEM
 
 ![The Restaurant Booking system](link)
 
 A web application that enables users to know more about the restaurant, manage bookings and view the menu, as well as a tool for restaurant owners and staff to organise their bookings.
 
-Visit the live site: [My restaurant booking system](https://megarestaurant-20c7141b277b.herokuapp.com/)
+Visit the live site: [MegaRestaurant booking system](https://megarestaurant-20c7141b277b.herokuapp.com/)
 
 # Table of contents
 
@@ -240,7 +240,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 - [Thursdays Night Club](https://www.freepik.com/free-photo/nightlife-people-having-fun-bars-clubs_18007731.htm#query=night%20club&position=8&from_view=search&track=ais&uuid=ba833ca9-c2d7-4c7c-8317-ab3ee2b78b96)
 
-- [Saturdays Night Club](hhttps://www.freepik.com/free-photo/close-up-nightlife-drinks-bar_18007751.htm#&position=45&from_view=collections&uuid=7dda27e0-67c9-41a0-b0e2-a0e98f7f5198)
+- [Saturdays Night Club](https://www.freepik.com/free-photo/close-up-nightlife-drinks-bar_18007751.htm#&position=45&from_view=collections&uuid=7dda27e0-67c9-41a0-b0e2-a0e98f7f5198)
 
 - [Christmas Party Nights](https://www.freepik.com/free-photo/wonderful-woman-holding-sparkle-balloons_12307032.htm#page=2&query=christmas%20party%20night&position=1&from_view=search&track=ais&uuid=78c9ed6a-1b1d-4afe-9c61-7483e36fb5ac)
 
