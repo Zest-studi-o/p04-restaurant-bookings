@@ -115,6 +115,8 @@ In the future, I would like to:
 
 - Events bookings (on top of regular bookings) in which the user can specify what event they would like to attend, or big group bookings.
 
+- Add password reset.
+
 ---
 
 ## Technologies Used
@@ -134,8 +136,6 @@ The language used is Python
 [Shields](https://shields.io/) - To add badges to the readme file.
 
 [Amiresponsive](https://ui.dev/amiresponsive) - To generate a mockup in different screen sizes.
-
-[Bandicam](https://www.bandicam.com/es/) - To screen record bugs and features.
 
 [Windows photo feature](https://www.microsoft.com/en-us/windows/photo-movie-editor) - To trim screen recording.
 
