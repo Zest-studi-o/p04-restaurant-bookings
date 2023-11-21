@@ -55,13 +55,13 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ![Login Desktop](docs/testing/lighthouse/desktop/lh-login-desktop.jpg)<br><br>
 
 ##### Contact
-![Contact Desktop](docs/testing/lighthouse/desktop/lh-contact-desktop.jpg)<br><br>
+![Contact Desktop](docs/testing/lighthouse/desktop/lh-contact-desktop.png)<br><br>
 
 
 #### Mobile Results
 
 ##### Home
-![Home Mobile](docs/testing/lighthouse/mobile/lh-home-mobile.jpg)<br><br>
+![Home Mobile](docs/testing/lighthouse/mobile/lh-contact-mobile.png)<br><br>
 
 ##### Menu
 ![Menu Mobile](docs/testing/lighthouse/mobile/lh-menu-mobile.jpg)<br><br>
