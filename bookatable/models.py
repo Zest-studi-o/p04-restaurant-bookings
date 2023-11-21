@@ -47,17 +47,22 @@ class Booking(models.Model):
         bookings = Booking.objects.filter(date=self.date, time=self.time)
         people_sum = bookings.aggregate(Sum('people'))['people__sum'] or 0
         people_sum += self.people
+        print(f'people_sum:', people_sum) 
         return people_sum <= 12
 
     def clean(self, *args, **kwargs):
-        if not self.id:
-            if not self.is_available():
-                raise ValidationError("Sorry, we are fully booked")
+        # if not self.id:
+        if not self.is_available():
+            print('validation error')
+            raise ValidationError("Sorry, we are fully booked")
         super().clean(*args, **kwargs)
 
+
     def save(self, *args, **kwargs):
+        print('save')
         self.full_clean()
         super().save(*args, **kwargs)
+    
 
     def __str__(self):
         return f"Booking ID: {self.id}, Date: {self.date}, Time: {self.time}"

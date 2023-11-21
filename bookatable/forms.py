@@ -56,3 +56,4 @@ class BookingForm(forms.ModelForm):
             ],
         help_text="Please select a booking time between 10:00 and 22:45"
     )
+
