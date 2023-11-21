@@ -29,11 +29,9 @@ Automated testing was carried out at a later stage using validators and all erro
 
 ### Python Linter
 
-I used [Python Linter - Pep8CI](https://pep8ci.herokuapp.com/) to test for errors, most of the errors returned were related to formatting such as spacing or long lines of code, those were all fixed.
+I used [Python Linter - Pep8CI](https://pep8ci.herokuapp.com/) to test python code, all errors were fixed which were related to spacing or lines length.
 
-![Python Linter - errors](docs/testing/python-linter-errors.png)
-
-![Python Linter - no errors](docs/testing/python-linter-no-errors.png)
+![Python Linter](docs/testing/python-linter.png)
 
 
 ### Lighthouse
@@ -46,7 +44,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ![Home Desktop](docs/testing/lighthouse/desktop/lh-home-desktop.jpg)<br><br>
 
 ##### Menu
-![Menu Desktop](docs/testing/lighthouse/desktop/lh-menu-desktop.jpg)<br><br>
+![Menu Desktop](docs/testing/lighthouse/desktop/lh-menu-desktop.png)<br><br>
 
 ##### Sing up
 ![Sign Up Desktop](docs/testing/lighthouse/desktop/lh-signup-desktop.jpg)<br><br>
@@ -64,7 +62,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ![Home Mobile](docs/testing/lighthouse/mobile/lh-contact-mobile.png)<br><br>
 
 ##### Menu
-![Menu Mobile](docs/testing/lighthouse/mobile/lh-menu-mobile.jpg)<br><br>
+![Menu Mobile](docs/testing/lighthouse/mobile/lh-menu-mobile.png)<br><br>
 
 ##### Sing up
 ![Sign Up Mobile](docs/testing/lighthouse/mobile/lh-signup-mobile.jpg)<br><br>
