@@ -46,7 +46,7 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
         people_on_datetime = bookings.aggregate(
             Sum('people'))['people__sum'] or 0
 
-        if people_on_datetime + form.instance.people <= 25:
+        if people_on_datetime + form.instance.people <= 12:
             form.save()
             messages.success(self.request, 'Your booking has been successful!')
         else:
