@@ -1,3 +1,4 @@
+from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
@@ -40,17 +41,17 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
         selected_date = form.cleaned_data['date']
         selected_time = form.cleaned_data['time']
 
-        people_on_datetime = Booking.objects.filter(date=selected_date, time=selected_time).aggregate(Sum('people'))['people__sum'] or 0
+        bookings = Booking.objects.filter(date=selected_date,
+                                          time=selected_time)
+        people_on_datetime = bookings.aggregate(
+            Sum('people'))['people__sum'] or 0
 
         if people_on_datetime + form.instance.people <= 25:
             form.save()
             messages.success(self.request, 'Your booking has been successful!')
         else:
             messages.error(self.request, 'Sorry, we do not have availability')
-        try:
-            return super().form_valid(form)
-        except ValidationError:
-            return HttpResponseRedirect(self.request.path)
+        return super().form_valid(form)
 
 
 class BookingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
@@ -66,7 +67,8 @@ class BookingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return self.request.user == self.get_object().created_by
 
     def form_valid(self, form):
-        messages.success(self.request, 'Your booking has been updated successfully!')
+        messages.success(self.request,
+                         'Your booking has been updated successfully!')
         return super().form_valid(form)
 
 
@@ -78,7 +80,8 @@ class BookingDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     template_name = 'booking_confirm_delete.html'
 
     def delete(self, request, *args, **kwargs):
-        messages.success(self.request, 'Your booking has been deleted successfully')
+        messages.success(self.request,
+                         'Your booking has been deleted successfully')
         return super().delete(request, *args, **kwargs)
 
     success_url = reverse_lazy('booking-list')

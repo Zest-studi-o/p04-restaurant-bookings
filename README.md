@@ -196,7 +196,7 @@ In order to protect the django app secret key it was set as environment variable
 To fork the Zest-studi-o/p04-restaurant-bookings repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, Zest-studi-o/P03-Hangman.
+2. Go to the repository for this project, Zest-studi-o/p04-restaurant-booking.
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
@@ -204,7 +204,7 @@ To fork the Zest-studi-o/p04-restaurant-bookings repository:
 To clone the Zest-studi-o/p04-restaurant-bookings repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, Zest-studi-o/Zest-studi-o/P03-Hangman.
+2. Go to the repository for this project, Zest-studi-o/Zest-studi-o/p04-restaurant-booking.
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -247,12 +247,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 - [Ramen bowl](https://www.pexels.com/photo/a-bowl-of-ramen-17952227/)
 - [Gyozas](https://www.pexels.com/photo/deep-fried-gyoza-5182675/)
 - [Ramen bowl mushrooms](https://www.freepik.com/free-ai-image/healthy-gourmet-pork-ramen-noodles-soup-generated-by-ai_42129604.htm#query=tofu%20ramen&position=15&from_view=search&track=ais&uuid=9aec8d45-85cf-4316-8e35-812b51fc3d9a)
-
 - [Singapour Noodles](https://www.pexels.com/photo/vegetable-salad-3026808/)
-- [Women on bench](https://www.pexels.com/photo/two-smiling-women-sitting-on-wooden-bench-1267696/)
-- [Avocado & egg toast](https://www.pexels.com/photo/pastry-and-boiled-egg-on-plate-566566/)
-- [Restaurant interior](https://www.freepik.com/free-photo/table-set-dinning-table_1241187.htm#query=healty%20restaurant%20interior&position=3&from_view=search&track=ais&uuid=26e9e053-f786-4e5b-a04b-8884c2aa0d61)
-- [noodles](https://www.freepik.com/free-photo/high-angle-tasty-arrangement-noodles-table_11741204.htm#query=pad%20thai&position=25&from_view=search&track=ais&uuid=09a5bf0a-2bcc-449b-b2f7-9ed50b944466)
 
 ### Acknowledgments
 

@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
+from django.core.exceptions import ValidationError
 
 
 PEOPLE = (
@@ -43,19 +44,20 @@ class Booking(models.Model):
     # Set this to foreign key
 
     def is_available(self):
-        bookings = Booking.objects.filter(date=self.date, time=self.time).aggregate(Sum('people'))['people__sum'] or 0
-
+        bookings = Booking.objects.filter(date=self.date, time=self.time)
+        people_sum = bookings.aggregate(Sum('people'))['people__sum'] or 0
         if self.id:
-            bookings -= self.people
-        return bookings < 12
+            people_sum -= self.people
+        return people_sum < 12
 
-    def save(self, *args, **kwargs):
-        """
-        Check availability
-        """
+    def clean(self, *args, **kwargs):
         if not self.id:
             if not self.is_available():
-                raise Exception("Sorry, we do not have availability")
+                raise ValidationError("Sorry, we are fully booked")
+        super().clean(*args, **kwargs)
+
+    def save(self, *args, **kwargs):
+        self.full_clean()
         super().save(*args, **kwargs)
 
     def __str__(self):

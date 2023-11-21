@@ -15,19 +15,24 @@ class BookingForm(forms.ModelForm):
             "date": "Date",
             "time": "Time",
             "people": "Guests",
-    }
+        }
 
     def clean(self):
         cleaned_data = super().clean()
         date = cleaned_data.get("date")
-        if date and date < timezone.now().date():
-            raise forms.ValidationError("Please select a future date")
-
         time = cleaned_data.get("time")
+        self.validate_future_booking(date)
+        self.validate_present_booking(time, date)
+
+    def validate_present_booking(self, time, date):
         if date == timezone.now().date() and time:
             current_time = datetime.now().time().strftime("%H:%M")
             if time < current_time:
                 raise forms.ValidationError("Please select a future time")
+
+    def validate_future_booking(self, date):
+        if date and date < timezone.now().date():
+            raise forms.ValidationError("Please select a future date")
 
     date = forms.DateField(
         help_text="Please select a date",
