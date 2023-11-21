@@ -46,9 +46,8 @@ class Booking(models.Model):
     def is_available(self):
         bookings = Booking.objects.filter(date=self.date, time=self.time)
         people_sum = bookings.aggregate(Sum('people'))['people__sum'] or 0
-        if self.id:
-            people_sum -= self.people
-        return people_sum < 12
+        people_sum += self.people
+        return people_sum <= 12
 
     def clean(self, *args, **kwargs):
         if not self.id:
