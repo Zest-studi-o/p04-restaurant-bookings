@@ -43,9 +43,6 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
 
         bookings = Booking.objects.filter(date=selected_date,
                                           time=selected_time)
-        people_on_datetime = bookings.aggregate(
-            Sum('people'))['people__sum'] or 0
-        return super().form_valid(form)
     """
     Success message for a booking
     """

@@ -244,7 +244,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 - [Christmas Party Nights](https://www.freepik.com/free-photo/wonderful-woman-holding-sparkle-balloons_12307032.htm#page=2&query=christmas%20party%20night&position=1&from_view=search&track=ais&uuid=78c9ed6a-1b1d-4afe-9c61-7483e36fb5ac)
 
-- [Ramen bowl](https://www.pexels.com/photo/a-bowl-of-ramen-17952227/)
+- [Curry](https://pixabay.com/photos/curry-food-dish-meal-cuisine-7249247/)
 - [Gyozas](https://www.pexels.com/photo/deep-fried-gyoza-5182675/)
 - [Ramen bowl mushrooms](https://www.freepik.com/free-ai-image/healthy-gourmet-pork-ramen-noodles-soup-generated-by-ai_42129604.htm#query=tofu%20ramen&position=15&from_view=search&track=ais&uuid=9aec8d45-85cf-4316-8e35-812b51fc3d9a)
 - [Singapour Noodles](https://www.pexels.com/photo/vegetable-salad-3026808/)
