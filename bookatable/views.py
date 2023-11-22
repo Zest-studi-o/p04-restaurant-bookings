@@ -45,19 +45,9 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
                                           time=selected_time)
         people_on_datetime = bookings.aggregate(
             Sum('people'))['people__sum'] or 0
-        
         return super().form_valid(form)
     """
-        if people_on_datetime + form.instance.people <= 12:
-            form.save()
-            messages.success(self.request, 'Your booking has been successful!')
-        else:
-            messages.error(self.request, 'Sorry, we do not have availability')
-    """
-    """
-    def get_success_url(self):
-        messages.success(self.request, "Success")
-        return super().get_success_url(self)
+    Success message for a booking
     """
 
     def get_success_url(self):

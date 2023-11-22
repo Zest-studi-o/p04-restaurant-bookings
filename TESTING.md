@@ -29,10 +29,12 @@ Automated testing was carried out at a later stage using validators and all erro
 
 ### Python Linter
 
-I used [Python Linter - Pep8CI](https://pep8ci.herokuapp.com/) to test python code, all errors were fixed which were related to spacing or lines length.
+I used [Python Linter - Pep8CI](https://pep8ci.herokuapp.com/) to test python code, most errors were fixed which were related to spacing or lines length.
 
 ![Python Linter](docs/testing/python-linter/python_linter.jpg)
 
+Some long line errors remained due to the impossibility of splitting up lines of code that would stop working otherwise or in build django code for example some lines at setting.py
+![Python Linter](docs/testing/python-linter/linter-settings.png)
 
 ### Lighthouse
 
