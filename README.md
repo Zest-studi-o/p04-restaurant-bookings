@@ -88,13 +88,13 @@ Project goals:
 
 ### Flowchart
 
-![Flowchart](flowchart.jpeg)
+![Flowchart](docs/readme/P04-flowchart.jpeg)
 
 ### Database Schema
 The database schema shows the structure of the database, the type and their relationship. This schema was done using 
 [Lucid Chart](https://www.lucidchart.com/)
 
-![Database Schema](docs/readme/P04-Database-schema.jpg)
+![Database Schema](docs/readme/P04-database-schema.jpg)
 
 ### Features
 
@@ -104,7 +104,80 @@ The database schema shows the structure of the database, the type and their rela
 
 - The website visual identity.
 
-![Logo](docs/readme/logo.png)
+![Logo](docs/readme/features/logo.png)
+
+**Nav Bar**
+
+- All pages include a navigation bar
+
+![Nav Bar](docs/readme/features/nav-bar.jpg)
+
+**Footer**
+
+- All pages include a footer with social media links
+
+![Footer](docs/readme/features/footer.jpg)
+
+**Hero Imange**
+
+- The home page includes a hero image.
+
+![Hero](docs/readme/features/hero-image.jpg)
+
+**About Us**
+
+- The home page includes an about us section where the areas available are presented to the user.
+
+![About us](docs/readme/features/about-the-venue.jpg)
+
+**Events**
+
+- The home page includes a an events section where upcoming events are advertised.
+
+![Events description](docs/readme/features/events.jpg)
+![Upcoming Events](docs/readme/features/upcoming-events.jpg)
+
+**Menu Page**
+
+- The menu page displays the restaurant menu items.
+
+![About Us](docs/readme/features/menu.jpg)
+
+**Make a booking**
+
+- A booking can be created from this page.
+
+![Create a booking](docs/readme/features/new-booking.jpg)
+
+**Booking list**
+
+- A list of the bookings is displayed on this page.
+
+![Booking List](docs/readme/features/bookings.jpg)
+
+**Edit bookings**
+
+- The user can edit their bookings.
+
+![Edit bookings](docs/readme/features/edit-booking.jpg)
+
+**Delete bookings**
+
+- The user can delete their bookings.
+
+![Delete bookings](docs/readme/features/delete-button.jpg)
+
+**Confirmation message**
+
+- A confirmation message is displayed before deleting a booking.
+
+![Success message](docs/readme/features/confirm-delete.jpg)
+
+**User Feedback**
+
+- The user receives feedback providing messages with relevant information such as their logged in status or booking success as in the example bellow:
+
+![User feedback](docs/readme/features/success.jpg)
 
 **Colour Palette**
 
@@ -225,14 +298,22 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Code Used
 
-- [Title](link)
+- Other students examples help me to understand the structure of a restaurant booking system app & what is expected for the README.md such as [McCarthys](https://github.com/Aylamccarthy/mccarthys-bistro-restaurant-booking-systemk)
+
+- [Code Institue](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm)walkthought tutorials "Hello Django" & "I think therefore I blog".
+
+- [Stack overflow](https://stackoverflow.com/) helped me to troubleshoot many of the issues encountered.
+
+- I also researched on [W3 Schools](https://www.w3schools.com/) & [Django Documentation](https://docs.djangoproject.com/en/4.2/).
 
 ### Content
 
-- [Ramen](https://ramen.ie/menu/)
-- [Odeon](https://odeon.ie/)
+- I used [Ramen](https://ramen.ie/menu/) for menu items content.
+- I used [Odeon](https://odeon.ie/) for the home page content.
 
 ### Media
+
+I took from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.com/) the following images:
 
 - [Luxury dining table](https://www.freepik.com/free-ai-image/luxury-dining-room-illuminated-by-candlelight-glow-generated-by-ai_41481488.htm)
 
@@ -258,3 +339,4 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 ### Acknowledgments
 
 - [Derek MCAuley](https://github.com/derekmcauley7), my Code Institute Mentor.
+- Tutor support at Code Institute.
