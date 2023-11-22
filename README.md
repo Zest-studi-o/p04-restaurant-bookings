@@ -90,6 +90,12 @@ Project goals:
 
 ![Flowchart](flowchart.jpeg)
 
+### Database Schema
+The database shema shows the structure of the database, the type and their relationship. This schema was done using 
+[Lucid Chart](https://www.lucidchart.com/)
+
+![Database Schema](docs/readme/P04-Database-schema.jpg)
+
 ### Features
 
 #### Existing Features
