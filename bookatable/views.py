@@ -24,7 +24,6 @@ class BookingListView(LoginRequiredMixin, ListView):
     def post(self, request, *args, **kwargs):
         return self.get(request, *args, **kwargs)
 
-
 class BookingCreateView(LoginRequiredMixin, CreateView):
     """
     Creates views for a bookings
@@ -43,6 +42,9 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
 
         bookings = Booking.objects.filter(date=selected_date,
                                           time=selected_time)
+        people_on_datetime = bookings.aggregate(
+            Sum('people'))['people__sum'] or 0
+        return super().form_valid(form)
     """
     Success message for a booking
     """
