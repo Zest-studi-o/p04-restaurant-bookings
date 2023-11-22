@@ -9,8 +9,9 @@ Visit the live site: [MegaRestaurant booking system](https://megarestaurant-20c7
 # Table of contents
 
 - [User Experience (UX)](#User-Experience-UX)
-
   - [User Stories](#User-Stories)
+
+- [Agile Metodology](#Agile-metodology)
 
 - [Design](#Design)
 
@@ -81,6 +82,22 @@ Project goals:
 |                                       |7A| As a user, I want to see the restaurant's opening and closing hours|
 |                                       |7B| As a user, I want to see location information on the website|
 |                                       |7C| As a user, I want to see contact information on the website|
+
+---
+
+## Agile Metodology
+
+The MoSCow method was used with accompanying custom Github project labels to help me to prioritise the important tasks.
+
+![Github user stories](docs/readme/user-stories.jpg)
+
+### MoSCoW Prioritization
+I've decomposed my Epics into stories prior to prioritizing and implementing them. Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+
+Must Have: guaranteed to be delivered (max 60% of stories)
+Should Have: adds significant value, but not vital (the rest ~20% of stories)
+Could Have: has small impact if left out (20% of stories)
+Won't Have: not a priority for this iteration
 
 ---
 
@@ -298,7 +315,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Code Used
 
-- Other students examples help me to understand the structure of a restaurant booking system app & what is expected for the README.md such as [McCarthys](https://github.com/Aylamccarthy/mccarthys-bistro-restaurant-booking-systemk)
+- Other students examples help me to understand the structure of a restaurant booking system app, how to link user stories to epics & what is expected for the README.md such as [McCarthys](https://github.com/Aylamccarthy/mccarthys-bistro-restaurant-booking-systemk)
 
 - [Code Institue](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm)walkthought tutorials "Hello Django" & "I think therefore I blog".
 
