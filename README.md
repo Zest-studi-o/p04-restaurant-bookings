@@ -256,7 +256,7 @@ In the future, I would like to:
 
 - Add error pages such as 404 or 505.
 
-- Add a fav icon there was an error 404 when adding the link for the fav icon to base.html
+- Work more on media queries.
 
 ---
 
@@ -397,6 +397,8 @@ I took from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.
 - [Gyozas](https://www.pexels.com/photo/deep-fried-gyoza-5182675/)
 - [Ramen bowl mushrooms](https://www.freepik.com/free-ai-image/healthy-gourmet-pork-ramen-noodles-soup-generated-by-ai_42129604.htm#query=tofu%20ramen&position=15&from_view=search&track=ais&uuid=9aec8d45-85cf-4316-8e35-812b51fc3d9a)
 - [Singapour Noodles](https://www.pexels.com/photo/vegetable-salad-3026808/)
+- [Rice Dish](https://www.pexels.com/photo/cooked-rice-on-black-ceramic-plate-723198/)
+- [Samosa](https://www.freepik.com/free-photo/samsa-samosas-with-meat_28353625.htm#query=samosa&position=3&from_view=search&track=sph&uuid=cb2fd17a-6bcc-4954-80fc-0c2d0f1961bd)
 
 ### Acknowledgments
 
