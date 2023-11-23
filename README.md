@@ -100,10 +100,10 @@ The MoSCow method was used with accompanying custom Github project labels to hel
 ### MoSCoW Prioritization
 I've decomposed my Epics into stories prior to prioritizing and implementing them. Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
 
-Must Have: guaranteed to be delivered (max 60% of stories)
-Should Have: adds significant value, but not vital (the rest ~20% of stories)
-Could Have: has small impact if left out (20% of stories)
-Won't Have: not a priority for this iteration
+- **Must Have:** guaranteed to be delivered (max 60% of stories)
+- **Should Have:** adds significant value, but not vital (the rest ~20% of stories)
+- **Could Have:** has small impact if left out (20% of stories)
+- **Won't Have:** not a priority for this iteration
 
 ---
 
@@ -256,6 +256,8 @@ In the future, I would like to:
 
 - Add error pages such as 404 or 505.
 
+- Add a fav icon there was an error 404 when adding the link for the fav icon to base.html
+
 ---
 
 ## Technologies Used
@@ -358,7 +360,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Code Used
 
-- Other students examples help me to understand the structure of a restaurant booking system app, how to link user stories to epics & what is expected for the README.md such as [McCarthys](https://github.com/Aylamccarthy/mccarthys-bistro-restaurant-booking-systemk)
+- Other students examples help me to understand the structure of a restaurant booking system app, how to link user stories to epics & what is expected for the README.md such as [McCarthys](https://github.com/Aylamccarthy/mccarthys-bistro-restaurant-booking-system)
 
 - [Code Institue](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm)walkthought tutorials "Hello Django" & "I think therefore I blog".
 
