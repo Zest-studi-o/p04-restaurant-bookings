@@ -308,5 +308,4 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 ### Known Bugs
 
-When trying to reset the password in the deployed app, there is an error message 505, it was not possible to implement authentication via email within Gitpod as mentioned in this [Bug report](https://github.com/gitpod-io/gitpod/issues/965), The ports used to send emails from Gitpod were blocked so it was impossible to set up email confirmation on account creation and also forgot password links.
----
+When trying to reset the password in the deployed app, there is an error message 505, it was not possible to implement authentication via email within Gitpod as mentioned in this [Bug report](https://github.com/gitpod-io/gitpod/issues/965). The ports used to send emails from Gitpod were blocked so it was impossible to set up email confirmation on account creation and also forgot password links.
