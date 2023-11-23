@@ -362,7 +362,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 - Other students examples help me to understand the structure of a restaurant booking system app, how to link user stories to epics & what is expected for the README.md such as [McCarthys](https://github.com/Aylamccarthy/mccarthys-bistro-restaurant-booking-system)
 
-- [Code Institue](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm)walkthought tutorials "Hello Django" & "I think therefore I blog".
+- [Code Institue](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm) walkthought tutorials "Hello Django" & "I think therefore I blog".
 
 - [Stack overflow](https://stackoverflow.com/) helped me to troubleshoot many of the issues encountered.
 
