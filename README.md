@@ -16,7 +16,13 @@ Visit the live site: [MegaRestaurant booking system](https://megarestaurant-20c7
 - [Design](#Design)
 
   - [Flowchart](#Flowchart)
+  - [Database Schema](#Database-Schema)
+  - [Colour Palette](#Colour-Palette)
+  - [Typography](#Typography)
+  - [Imagery](#Imagery)
+  - [Wireframes](#Wireframes)
   - [Features](#Features)
+  
 
 - [Technologies Used](#Technologies-Used)
 
@@ -113,6 +119,40 @@ The database schema shows the structure of the database, the type and their rela
 
 ![Database Schema](docs/readme/P04-database-schema.jpg)
 
+### Colour Palette
+
+Extracted from a picture with healthy restaurant theme, which was picked for the cover image, using the colour picker, after picking the cover image this matching colour palette was selected using [Coolors](https://coolors.co/) and other pictures containing the same colour scheme for a consistent visual design.
+
+![Colour palette](docs/readme/colour-palette.png)
+
+### Typography
+For the logo I have used Family Dancing which is a script typeface and looks elegant which matches the rest of the visual identity.
+This font was used in some headings such as the homepage in order to embellish it and then for the body copy a readable sans serif, optimal for web design such as Roboto. This last one is also used in the form headings as it is easier to read.
+The fonts were taken from Google Fonts:
+
+- [Roboto](https://fonts.google.com/specimen/Roboto)
+- [Dancing Script](https://fonts.google.com/specimen/Dancing+Script)
+
+### Imagery
+
+The images are taken from the royalty-free sites credited [here](#Credits).
+
+### Wireframes
+
+Wireframes for desktop, tablet and mobile versions are as follows:
+
+- Home 
+![Home](docs/readme/wireframes/p04-wf-home.png)
+
+- Menu 
+![Menu](docs/readme/wireframes/p04-wf-menu.png)
+
+- Bookings 
+![Bookings](docs/readme/wireframes/p04-wf-bookings.png)
+
+- Contact 
+![Contact](docs/readme/wireframes/p04-wf-contact-us.png)
+
 ### Features
 
 #### Existing Features
@@ -196,11 +236,6 @@ The database schema shows the structure of the database, the type and their rela
 
 ![User feedback](docs/readme/features/success.jpg)
 
-**Colour Palette**
-
-Extracted from a picture with healthy restaurant theme, which was picked for the cover image, using the colour picker, after picking the cover image this matching colour palette was selected using [Coolors](https://coolors.co/) and other pictures containing the same colour scheme for a consistent visual design.
-
-![Colour palette](docs/readme/colour-palette.png)
 ---
 
 ### Features Left to Implement
@@ -209,9 +244,17 @@ In the future, I would like to:
 
 - Add different menus, such as cocktail menus, set menus, group menus.
 
+- Add different prices and varieties for the same dish with extra ingredients
+
+- Add allergens infographic to the menu & specify the dishes containing them, add a filter to sort by allergen.
+
 - Events bookings (on top of regular bookings) in which the user can specify what event they would like to attend, or big group bookings.
 
-- Add password reset.
+- Arrows to scroll up and down through the content in the home page for easier navigation.
+
+- Add password reset & forgot user reminder.
+
+- Add error pages such as 404 or 505.
 
 ---
 
