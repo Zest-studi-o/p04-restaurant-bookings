@@ -9,13 +9,38 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+from dotenv import load_dotenv
 import os
+
+load_dotenv()  # Carga las variables de entorno desde el archivo .env
+
+SECRET_KEY = os.getenv('SECRET_KEY')
+
+
 from pathlib import Path
 from django.contrib.messages import constants as messages
 import dj_database_url
-if os.path.isfile("env.py"):
-    import env
+import environ
+env = environ.Env()
+environ.Env.read_env()  # Lee las variables de entorno del archivo .env
+
+# Definir la variable HEROKU_HOSTNAME
+HEROKU_HOSTNAME = env('HEROKU_HOSTNAME', default=None)
+
+# Luego puedes usarla de esta forma
+
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'HEROKU_HOSTNAME',
+]
+
+
+if HEROKU_HOSTNAME:
+    ALLOWED_HOSTS.append(HEROKU_HOSTNAME)
+
+#print("SECRET_KEY:", os.environ.get('SECRET_KEY'))
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,15 +53,23 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+#DEBUG = env.bool('DEBUG', default=False)
+DEBUG=True
+
+
+HEROKU_HOSTNAME = env('HEROKU_HOSTNAME', default=None)
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
     '8000-zeststudio-p04restauran-lrz9o8qq380.ws-eu105.gitpod.io',
     '8000-zeststudio-p04restauran-lrz9o8qq380.ws-eu106.gitpod.io',
-    'localhost',
-    os.environ.get('HEROKU_HOSTNAME'),
+    'HEROKU_HOSTNAME',
+    'https://megarestaurant-20c7141b277b.herokuapp.com/',  # Incluye la URL de heroku
 ]
 
+if HEROKU_HOSTNAME:
+    ALLOWED_HOSTS.append(HEROKU_HOSTNAME)
 
 # Application definition
 
@@ -63,7 +96,7 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URl = '/'
 LOGOUT_REDIRECT_URl = '/'
 
 MESSAGE_TAGS = {
@@ -80,6 +113,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-zeststudio-p04restauran-lrz9o8qq380.ws-eu106.gitpod.io'
+    'https://megarestaurant-20c7141b277b.herokuapp.com/',
 ]
 
 MIDDLEWARE = [
@@ -118,8 +152,10 @@ WSGI_APPLICATION = 'megarestaurant.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
+DATABASE_URL = os.environ.get("DATABASE_URL", "sqlite:///db.sqlite3")
+
 DATABASES = {
-     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(DATABASE_URL)
 }
 
 

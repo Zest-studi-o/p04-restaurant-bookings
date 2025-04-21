@@ -3,6 +3,9 @@
 import os
 import sys
 
+SECRET_KEY = os.getenv("SECRET_KEY")
+DEBUG = os.getenv("DEBUG") == "True"
+
 
 def main():
     """Run administrative tasks."""
