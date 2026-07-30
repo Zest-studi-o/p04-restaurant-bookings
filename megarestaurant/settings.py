@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
     'HEROKU_HOSTNAME',
+    'megarestaurant.onrender.com'
 ]
 
 
