@@ -290,9 +290,9 @@ The language used is Python
 
 [Elephantsql](https://www.elephantsql.com/) - Originally used Elephantsql PostgreSQL as a Service.
 
-[Render](https://render.com/) - Changed to Render to deploy the App.
+[Render](https://render.com) - To deploy the app (updated 2026).
 
-[Neon](https://neon.tech) - Used Neon PostgreSQL as a Service.
+[Neon](https://neon.tech) - Serverless PostgreSQL database cloud service (updated 2026)..
 
 ## Deployment & Local Development
 
