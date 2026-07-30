@@ -23,7 +23,6 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 DEBUG = True
 
-# UN SOLO bloque de ALLOWED_HOSTS definitivo
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
@@ -31,7 +30,6 @@ ALLOWED_HOSTS = [
 ]
 
 if HEROKU_HOSTNAME:
-    # Quitamos el https:// si viene en la variable para que Django no falle
     clean_host = HEROKU_HOSTNAME.replace('https://', '').replace('/', '')
     if clean_host not in ALLOWED_HOSTS:
         ALLOWED_HOSTS.append(clean_host)
@@ -158,10 +156,10 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
-
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
@@ -171,11 +169,13 @@ STORAGES = {
         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
     },
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.StaticFilesStorage",  
+        "BACKEND": "whitenoise.storage.StaticFilesStorage",
     },
 }
 
-STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'  
+# El puente para la librería de Cloudinary
+STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
+  
  
 
 
