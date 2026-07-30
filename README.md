@@ -4,7 +4,7 @@
 
 A web application that enables users to know more about the restaurant, manage bookings and view the menu, as well as a tool for restaurant owners and staff to organise their bookings.
 
-Visit the live site: [MegaRestaurant booking system](https://megarestaurant-20c7141b277b.herokuapp.com/)
+Visit the live site: [MegaRestaurant booking system](https://megarestaurant.onrender.com/)
 
 # Table of contents
 
@@ -282,15 +282,17 @@ The language used is Python
 
 [Veed](https://www.veed.io/convert/mp4-to-gif?gad=1&gclid=CjwKCAjwgqejBhBAEiwAuWHioCzHSc5XTTdsnixrxavlvLKEi4i_YeN__Xol0nANQCBhw60caeyF3RoC31wQAvD_BwE) - To convert mp4 to gif
 
-[Heroku](https://id.heroku.com/) - To deploy the App.
-
-[Code Institute template](https://github.com/Code-Institute-Org/p3-template) - To run the game in the terminal using Heroku.
-
 [Django](https://www.djangoproject.com/) - Web Framework.
 
-[Elephantsql](https://www.elephantsql.com/) - PostgreSQL as a Service.
-
 [Cloudinary](https://cloudinary.com/) - For storing static data
+
+[Heroku](https://id.heroku.com/) - Originally used Heroku to deploy the App.
+
+[Elephantsql](https://www.elephantsql.com/) - Originally used Elephantsql PostgreSQL as a Service.
+
+[Render](https://render.com/) - Changed to Render to deploy the App.
+
+[Neon](https://neon.tech) - Used Neon PostgreSQL as a Service.
 
 ## Deployment & Local Development
 
@@ -301,28 +303,28 @@ The language used is Python
 ####  Django
 In order to protect the django app secret key it was set as environment variable and stored in env.py file
 
-####  Heroku
-1. Log in to [Heroku](https://id.heroku.com) or create an account
-2. Click “New”
-3. Click “Create new app”
-4. Give your app a name and select the region closest to you. When you’re done, click “Create app” to confirm
-5. Open the Settings tab and add the config vars
+#### Render (Deployment)
+1. Log in to [Render](https://render.com) or create an account connecting your GitHub profile.
+2. Click the “New +” button in the top right corner and select “Web Service”.
+3. Connect your project's GitHub repository.
+4. Set up the basic configuration:
+   - **Name:** Your preferred application name.
+   - **Region:** Frankfurt (Europe) for optimal connection from Europe.
+   - **Runtime:** Python.
+   - **Instance Type:** Free (0$/month).
+5. Set up the required environment execution commands:
+   - **Build Command:** `pip install -r requirements.txt && mkdir -p staticfiles && python manage.py collectstatic --noinput`
+   - **Start Command:** `gunicorn megarestaurant.wsgi:application`
+6. Click on “Advanced” and add your environment variables (`DATABASE_URL`, `SECRET_KEY`, `CLOUDINARY_URL`, `HEROKU_HOSTNAME`, and `DEBUG`).
+7. Click “Create Web Service” to deploy your application live.
 
-####  ElephantSQL
-1. Log in to [ElephantSQL](https://www.elephantsql.com/) or create an account
-2. Click “Create New Instance”
-3. Set up your plan
- - Give your plan a Name (this is commonly the name of the project)
- - Select the Tiny Turtle (Free) plan
- - You can leave the Tags field blank
-4. Select “Select Region”
-5. Select a data center near you
-6. Then click “Review”
-7. Check your details are correct and then click “Create instance”
-8. Return to the ElephantSQL dashboard and click on the database instance name for this project
-9. In the URL section, click the copy icon to copy the database URL
-10. Paste this URL into env.py file as DATABASE_URL value and save the file.
-
+#### Neon (PostgreSQL Database)
+1. Log in to [Neon](https://neon.tech) or create a free account.
+2. Create a new project, give it a name, and select the region closest to you (Europe/Frankfurt).
+3. Once created, go to the Dashboard and navigate to the **Connection Details** section.
+4. Choose the **Pooled connection** string from the dropdown and select the **Python** or **URI** format.
+5. Check the "Show password" box and copy the full connection string starting with `postgresql://...`
+6. Save this connection string inside your local `.env` file as the `DATABASE_URL` value, and add it securely to your Render Environment Variables.
 
 ####  Cloudinary
 1. Log in to [Cloudinary](https://cloudinary.com/) or create an account
