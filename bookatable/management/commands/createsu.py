@@ -9,8 +9,8 @@ class Command(BaseCommand):
         User = get_user_model()
         
         # Leemos los datos de las variables de entorno de Render
-        username = os.environ.get('DJANGO_SUPERUSER_USERNAME', 'admin')
-        email = os.environ.get('DJANGO_SUPERUSER_EMAIL', 'admin@example.com')
+        username = os.environ.get('DJANGO_SUPERUSER_USERNAME')
+        email = os.environ.get('DJANGO_SUPERUSER_EMAIL')
         password = os.environ.get('DJANGO_SUPERUSER_PASSWORD')
 
         if not password:
