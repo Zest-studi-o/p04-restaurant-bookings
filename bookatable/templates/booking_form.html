@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title text-center">{{ form.instance.id|default:'New Booking' }}</h1>
+
+            {% with available_tables=form.total_tables|default:0 form_booked_tables=form.booked_tables|default:0 %}
+            <form class="text-center" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+            {% endwith %}
+        </div>
+    </div>
+</div>
+{% endblock %}
